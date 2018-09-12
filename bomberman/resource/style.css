@@ -1,0 +1,9 @@
+#television{margin:50px auto 0 auto;width:332px;heigth:332px;background:#fff url(television.png) top left;padding:43px 220px 128px 98px;position:relative;}
+#start{background:url(start.png) top left;width:34px;height:33px;position:absolute;right:37px;top:225px;border:none;text-indent:-9999px;cursor:pointer;display:none;}
+#jogadores{position:absolute;right:42px;top:110px;}
+#jogadores button{cursor:pointer;}
+#resultado{color: #FFCC00;font-family: arial;font-size: 12px;position: absolute;right: 30px;text-align: center;text-shadow: 1px 1px 1px #333333;text-transform: uppercase;top: 180px;width: 130px;font-weight:bold;}
+#relogio{color: #FFCC00;font-family: arial;font-weight: bold;position: absolute;right: 46px;text-align: center;top: 50px;width: 95px;text-shadow: 1px 1px 1px #333333;}
+#controle{text-align:center;width:200px;margin:40px auto 0 auto;}
+#controle a{border:none;}
+#controle img{border:none;}

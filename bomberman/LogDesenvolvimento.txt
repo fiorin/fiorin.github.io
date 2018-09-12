@@ -1,0 +1,75 @@
+> 0.0.1  -----------------------------------------------------------------------
+	+ tabuleiro vetor
+	+ procedural
+> 0.0.2  -----------------------------------------------------------------------
+	+ orientado
+	+ suporte espacos
+	+ suporte jogador
+	+ suporte blocos
+	+ suporte movimento
+> 0.0.3  -----------------------------------------------------------------------
+	+ colisao
+	+ blocos fixos manual
+	+ suporte bomba
+> 0.0.4  -----------------------------------------------------------------------
+	+ suporte fase
+	+ blocos quebraveis automatico
+> 0.0.5  -----------------------------------------------------------------------
+	+ movimentacao
+	+ colocacao bomba
+	+ atualizao por acao
+> 0.0.6  -----------------------------------------------------------------------
+	+ velocidade por tempo
+> 0.0.7  -----------------------------------------------------------------------
+	+ validacao movimento
+	+ explosao tempo
+> 0.0.8  -----------------------------------------------------------------------
+	+ separacao codigo elementos
+> 0.0.9  -----------------------------------------------------------------------
+	+ melhora blocos quebraveis
+	+ sprite
+> 0.0.10 -----------------------------------------------------------------------
+	+ atualizacao por ciclo
+	+ tabuleiro matriz
+	+ blocos fixos automatico
+	+ blocos quebraveis manual
+	+ velocidade por ciclo
+	+ bomba timer
+	+ explosao ciclo
+> 0.0.11 -----------------------------------------------------------------------
+	+ suporte animacao
+	+ quebrar bloco
+	+ blocos quebraveis automatico
+> 0.0.12 -----------------------------------------------------------------------
+	+ suporte 2 jogadores
+	+ estrutura de pastas
+	+ morte
+	+ incendiar vazio
+	+ velocidade por ciclo e flag
+	+ suporte explosao
+> 0.0.13 -----------------------------------------------------------------------
+	+ array de jogadores por espaco
+> 0.0.14 -----------------------------------------------------------------------
+	+ suporte 4 jogadores
+	+ suporte itens
+	+ explosao centro da bomba
+	+ tela de abertura
+	+ desalocar jogador
+> 0.0.15 -----------------------------------------------------------------------
+	+ sistema de utilizacao de itens
+	+ melhoramento sistema de movimentacao
+	+ utilizacao de itens
+> 0.0.16 -----------------------------------------------------------------------
+	+ condicao de vitoria
+	+ relogio
+	+ quantidade de jogadores
+	+ incendiar centro bomba
+> 0.0.17  -----------------------------------------------------------------------
+ 	+ distribuir itens
+	+ otimização de código
+> 0.0.18  -----------------------------------------------------------------------
+	+ correcao bug de empate
+	+ sistema ciclico de vitoria
+	+ correcao bug vida negativa infinita
+> 0.0.19  -----------------------------------------------------------------------
+	+ otimização de código
