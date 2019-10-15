@@ -1,0 +1,25 @@
+html,body{
+    background: #333
+}
+#container{
+    width:800px;
+}
+.box{
+    background:#ddd;
+    color:#333;
+    border-radius:5px;
+}
+#creatures img{
+    border:1px solid #333;
+    padding:2px
+}
+#heroes img{
+    border:1px solid #333;
+    padding:2px
+}
+.table-mod{
+    
+}
+#mods{
+
+}
