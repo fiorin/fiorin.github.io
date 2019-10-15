@@ -65,7 +65,7 @@ var heroes = [
         project: 'VCMI'
     },
     {
-        name: 'Balor',
+        name: 'balor',
         faction: 'ruins',    
         class: 'hermit',
         secondary: [{
@@ -129,7 +129,7 @@ var heroes = [
         class: 'herectic',
         secondary: [{
             type: 'wisdom',level: 'basic'},{
-            type: 'fireMagic',level: 'basic'
+            type: 'firemagic',level: 'basic'
         }],
         project: 'VCMI'
     },
@@ -179,7 +179,7 @@ var heroes = [
         class: 'elementalist',
         secondary: [{
             type: 'armorer',level: 'basic'},{
-            type: 'earthMagic',level: 'basic'
+            type: 'earthmagic',level: 'basic'
         }],
         project: 'VCMI'
     },
@@ -293,7 +293,7 @@ var heroes = [
         project: 'VCMI'
     },
     {
-        name: 'Brinn',
+        name: 'brinn',
         faction: 'rampart',   
         class: 'druid',
         secondary: [{
@@ -303,7 +303,7 @@ var heroes = [
         project: 'VCMI'
     },
     {
-        name: 'Ravi',
+        name: 'ravi',
         faction: 'necropolis',      
         class: 'necromancer',
         secondary: [{
