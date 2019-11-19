@@ -65,7 +65,7 @@ var heroes = [
         project: 'VCMI'
     },
     {
-        name: 'Balor',
+        name: 'balor',
         faction: 'ruins',    
         class: 'hermit',
         secondary: [{
@@ -129,7 +129,7 @@ var heroes = [
         class: 'herectic',
         secondary: [{
             type: 'wisdom',level: 'basic'},{
-            type: 'fireMagic',level: 'basic'
+            type: 'firemagic',level: 'basic'
         }],
         project: 'VCMI'
     },
@@ -156,7 +156,7 @@ var heroes = [
     {
         name: 'caesar',
         faction: 'cove',      
-        class: 'captain',
+        class: 'navigator',
         secondary: [{
             type: 'offence',level: 'basic'},{
             type: 'artillery',level: 'basic'
@@ -179,7 +179,7 @@ var heroes = [
         class: 'elementalist',
         secondary: [{
             type: 'armorer',level: 'basic'},{
-            type: 'earthMagic',level: 'basic'
+            type: 'earthmagic',level: 'basic'
         }],
         project: 'VCMI'
     },
@@ -293,7 +293,7 @@ var heroes = [
         project: 'VCMI'
     },
     {
-        name: 'Brinn',
+        name: 'brinn',
         faction: 'rampart',   
         class: 'druid',
         secondary: [{
@@ -303,7 +303,7 @@ var heroes = [
         project: 'VCMI'
     },
     {
-        name: 'Ravi',
+        name: 'ravi',
         faction: 'necropolis',      
         class: 'necromancer',
         secondary: [{
@@ -364,11 +364,319 @@ var heroes = [
     },
     {
         name: 'roan',
-        faction: 'cove',      
-        class: 'overlord',
+        faction: 'stronghold',      
+        class: 'barbarian',
         secondary: [{
-            type: 'resistance',level: 'basic'},{
+            type: 'offence',level: 'basic'},{
+            type: 'resistance',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'giacomo',
+        faction: 'neutral',      
+        class: 'merchant',
+        secondary: [{
+            type: 'logistics',level: 'basic'},{
+            type: 'intelligence',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'martin',
+        faction: 'castle',      
+        class: 'knight',
+        secondary: [{
+            type: 'armorer',level: 'basic'},{
+            type: 'leadership',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'francis',
+        faction: 'necropolis',      
+        class: 'deathknight',
+        secondary: [{
+            type: 'necromancy',level: 'basic'},{
             type: 'armorer',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'henrik',
+        faction: 'tower',      
+        class: 'alchemist',
+        secondary: [{
+            type: 'ballistics',level: 'basic'},{
+            type: 'artillery',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'barkan',
+        faction: 'tower',      
+        class: 'wizard',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'pathfinding',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'dana',
+        faction: 'stronghold',      
+        class: 'barbarian',
+        secondary: [{
+            type: 'archery',level: 'basic'},{
+            type: 'armorer',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'etia',
+        faction: 'inferno',      
+        class: 'demoniac',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'firemagic',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'hana',
+        faction: 'conflux',      
+        class: 'elementalist',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'airmagic',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'keus',
+        faction: 'tower',      
+        class: 'alchemist',
+        secondary: [{
+            type: 'armorer',level: 'expert'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'krystin',
+        faction: 'rampart',      
+        class: 'druid',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'airmagic',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'liana',
+        faction: 'conflux',      
+        class: 'elementalist',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'tactics',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'moira',
+        faction: 'castle',      
+        class: 'cleric',
+        secondary: [{
+            type: 'scholar',level: 'advanced'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'morales',
+        faction: 'cove',      
+        class: 'captain',
+        secondary: [{
+            type: 'navigation',level: 'basic'},{
+            type: 'artillery',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'nodens',
+        faction: 'dungeon',      
+        class: 'warlock',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'learning',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'nova',
+        faction: 'fortress',      
+        class: 'witch',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'watermagic',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'pandora',
+        faction: 'conflux',      
+        class: 'planeswalker',
+        secondary: [{
+            type: 'firemagic',level: 'basic'},{
+            type: 'firstaid',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'rayssa',
+        faction: 'stronghold',      
+        class: 'battlemage',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'necromancy',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'remer',
+        faction: 'neutral',      
+        class: 'bard',
+        secondary: [{
+            type: 'pathfinding',level: 'basic'},{
+            type: 'scouting',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'rory',
+        faction: 'tower',      
+        class: 'wizard',
+        secondary: [{
+            type: 'artillery',level: 'basic'},{
+            type: 'firemagic',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'anna',
+        faction: 'tower',      
+        class: 'alchemist',
+        secondary: [{
+            type: 'states',level: 'basic'},{
+            type: 'leadership',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'theresa',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'diana',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'marcus',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'ferri',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'joan',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'kenshin',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'milena',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'prospero',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'samuel',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'thomas',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'yaxi',
+        faction: 'neutral',      
+        class: '?',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'wisdom',level: 'basic'
         }],
         project: 'VCMI'
     },
