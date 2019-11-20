@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded',function(){
         html += '<td>'
         for (indexSecondary in hero.secondary) {
             secondary = hero.secondary[indexSecondary]
-            console.log(secondary)
             html += '<img src="img/secondary/'+secondary.type+'-'+secondary.level+'.bmp" alt="'+secondary.type+'">'
         }
         html += '</td>'
@@ -57,7 +56,7 @@ var heroes = [
     {
         name: 'melchert',
         faction: 'tower',    
-        class: 'mage',
+        class: 'wizard',
         secondary: [{
             type: 'wisdom',level: 'basic'},{
             type: 'necromancy',level: 'basic'
@@ -158,7 +157,7 @@ var heroes = [
         faction: 'cove',      
         class: 'navigator',
         secondary: [{
-            type: 'offence',level: 'basic'},{
+            type: 'wisdom',level: 'basic'},{
             type: 'artillery',level: 'basic'
         }],
         project: 'VCMI'
@@ -367,7 +366,7 @@ var heroes = [
         faction: 'stronghold',      
         class: 'barbarian',
         secondary: [{
-            type: 'offence',level: 'basic'},{
+            type: 'eagleeye',level: 'basic'},{
             type: 'resistance',level: 'basic'
         }],
         project: 'VCMI'
@@ -387,8 +386,8 @@ var heroes = [
         faction: 'castle',      
         class: 'knight',
         secondary: [{
-            type: 'armorer',level: 'basic'},{
-            type: 'leadership',level: 'basic'
+            type: 'leadership',level: 'basic'},{
+            type: 'armorer',level: 'basic'
         }],
         project: 'VCMI'
     },
@@ -427,7 +426,7 @@ var heroes = [
         faction: 'stronghold',      
         class: 'barbarian',
         secondary: [{
-            type: 'archery',level: 'basic'},{
+            type: 'logistics',level: 'basic'},{
             type: 'armorer',level: 'basic'
         }],
         project: 'VCMI'
@@ -477,7 +476,7 @@ var heroes = [
         class: 'elementalist',
         secondary: [{
             type: 'wisdom',level: 'basic'},{
-            type: 'tactics',level: 'basic'
+            type: 'resistance',level: 'basic'
         }],
         project: 'VCMI'
     },
@@ -571,112 +570,102 @@ var heroes = [
         project: 'VCMI'
     },
     {
-        name: 'theresa',
-        faction: 'neutral',      
-        class: '?',
-        secondary: [{
-            type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
-        }],
-        project: 'VCMI'
-    },
-    {
         name: 'diana',
-        faction: 'neutral',      
-        class: '?',
+        faction: 'stronghold',      
+        class: 'barbarian',
         secondary: [{
-            type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
+            type: 'leadership',level: 'basic'},{
+            type: 'archery',level: 'basic'
         }],
         project: 'VCMI'
     },
     {
         name: 'marcus',
-        faction: 'neutral',      
-        class: '?',
+        faction: 'dungeon',      
+        class: 'warlock',
         secondary: [{
             type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
+            type: 'resistance',level: 'basic'
         }],
         project: 'VCMI'
     },
     {
         name: 'ferri',
-        faction: 'neutral',      
-        class: '?',
+        faction: 'conflux',      
+        class: 'elementalist',
         secondary: [{
             type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
+            type: 'firemagic',level: 'basic'
         }],
         project: 'VCMI'
     },
     {
         name: 'joan',
         faction: 'neutral',      
-        class: '?',
+        class: 'fighter',
         secondary: [{
-            type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
+            type: 'tactics',level: 'basic'},{
+            type: 'resistance',level: 'basic'
         }],
         project: 'VCMI'
     },
     {
         name: 'kenshin',
         faction: 'neutral',      
-        class: '?',
+        class: 'fighter',
         secondary: [{
-            type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
+            type: 'tactics',level: 'basic'},{
+            type: 'learning',level: 'basic'
         }],
         project: 'VCMI'
     },
     {
         name: 'milena',
-        faction: 'neutral',      
-        class: '?',
+        faction: 'castle',      
+        class: 'knight',
         secondary: [{
-            type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
+            type: 'leadership',level: 'basic'},{
+            type: 'diplomacy',level: 'basic'
         }],
         project: 'VCMI'
     },
     {
         name: 'prospero',
-        faction: 'neutral',      
-        class: '?',
+        faction: 'tower',      
+        class: 'wizard',
         secondary: [{
             type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
+            type: 'airmagic',level: 'basic'
         }],
         project: 'VCMI'
     },
     {
         name: 'samuel',
         faction: 'neutral',      
-        class: '?',
+        class: 'bard',
         secondary: [{
-            type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
+            type: 'learning',level: 'basic'},{
+            type: 'intelligence',level: 'basic'
         }],
         project: 'VCMI'
     },
     {
         name: 'thomas',
         faction: 'neutral',      
-        class: '?',
+        class: 'merchant',
         secondary: [{
-            type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
+            type: 'navigation',level: 'basic'},{
+            type: 'learning',level: 'basic'
         }],
         project: 'VCMI'
     },
     {
         name: 'yaxi',
-        faction: 'neutral',      
-        class: '?',
+        faction: 'cove',      
+        class: 'navigator',
         secondary: [{
             type: 'wisdom',level: 'basic'},{
-            type: 'wisdom',level: 'basic'
+            type: 'offence',level: 'basic'
         }],
         project: 'VCMI'
     },
