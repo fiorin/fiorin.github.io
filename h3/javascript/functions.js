@@ -66,7 +66,7 @@ var heroes = [
     {
         name: 'balor',
         faction: 'ruins',    
-        class: 'hermit',
+        class: 'warden',
         secondary: [{
             type: 'pathfinding',level: 'advanced'
         }],
@@ -666,6 +666,65 @@ var heroes = [
         secondary: [{
             type: 'wisdom',level: 'basic'},{
             type: 'offence',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'suzzane',
+        faction: 'rampart',      
+        class: 'druid',
+        secondary: [{
+            type: 'wisdom',level: 'basic'},{
+            type: 'pathfinding',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'macrae',
+        faction: 'ruins',      
+        class: 'warden',
+        secondary: [{
+            type: 'earthmagic',level: 'basic'},{
+            type: 'resistance',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'roberts',
+        faction: 'cove',      
+        class: 'captain',
+        secondary: [{
+            type: 'navigation',level: 'basic'},{
+            type: 'ballistics',level: 'basic'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'melanie',
+        faction: 'conflux',      
+        class: 'elementalist',
+        secondary: [{
+            type: 'sorcery',level: 'basic'},{
+            type: 'watermagic',level: 'expert'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'brigitte',
+        faction: 'castle',      
+        class: 'knight',
+        secondary: [{
+            type: 'armorer',level: 'advanced'
+        }],
+        project: 'VCMI'
+    },
+    {
+        name: 'cassio',
+        faction: 'neutral',      
+        class: 'bard',
+        secondary: [{
+            type: 'mysticism',level: 'basic'},{
+            type: 'eagleeye',level: 'basic'
         }],
         project: 'VCMI'
     },
