@@ -1,0 +1,20 @@
+{
+	"name" : "More Creatures",
+	"description" : "Creatures added to the core game.",
+	"author" : "Fiorin",
+	"contact" : "http://fior.in",
+	"version" : "0.1",
+	"modType" : "Creatures",	
+	"creatures" : [
+		"config/creatures/wendigo.json",
+		//"config/creatures/firbolg.json",
+		//"config/creatures/nobleFirbolg.json",
+		//"config/creatures/peryton.json",
+		//"config/creatures/grandPeryton.json",
+		//"config/creatures/forestWitch.json",
+		//"config/creatures/naturePriestess.json"
+	],
+	"objects" : [ 
+		//"config/dwellings.json" 
+	]
+}

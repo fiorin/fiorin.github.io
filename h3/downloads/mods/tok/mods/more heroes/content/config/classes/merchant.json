@@ -1,0 +1,91 @@
+{
+	"merchant" :
+	{
+		"animation" : {
+			"battle" : 
+			{
+				"female" : "classes/merchant/female.def",
+				"male"   : "classes/merchant/male.def"
+			}
+		},
+		"mapObject" : {
+			"templates" : {
+				"default" : { 
+					"animation" : "classes/merchant/maleAdv.def",
+					"editorAnimation": "classes/editorDefault.def" 
+				}
+			}
+		},
+		"name" : "Merchant",
+		"faction" : "neutral",
+		"commander" : "gnol",
+		"affinity" : "might",
+		"primarySkills" :
+		{
+			"attack"     : 1,
+			"defence"    : 1,
+			"spellpower" : 1,
+			"knowledge"  : 2
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 10,
+			"defence"    : 10,
+			"spellpower" : 30,
+			"knowledge"  : 50
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 20,
+			"defence"    : 20,
+			"spellpower" : 20,
+			"knowledge"  : 40
+		},
+		"secondarySkills" :
+		{ 
+			"pathfinding": 7,
+			"archery": 0,
+			"logistics": 9,
+			"scouting": 7,
+			"diplomacy": 10,
+			"navigation": 7,
+			"wisdom": 2,
+			"mysticism": 3,
+			"luck": 8,
+			"eagleEye": 0,
+			"fireMagic": 0,
+			"earthMagic": 0,
+			"airMagic": 0,
+			"waterMagic": 0,
+			"scholar": 0,
+			"learning": 6,
+			"intelligence": 4,
+			"sorcery": 2,
+			"resistance": 3,
+			"firstAid": 5,
+			"armorer": 3,
+			"artillery": 2,
+			"ballistics": 2,
+			"estates": 7,
+			"leadership": 4,
+			"necromancy": 0,
+			"offence": 0,
+			"tactics": 7
+		},
+		"defaultTavern" : 3,
+		"tavern" :
+		{
+				"castle" : 5,
+				"conflux" : 0,
+				"dungeon" : 2,
+				"fortress" : 4,
+				"inferno" : 0,
+				"necropolis" : 0,
+				"rampart" : 3,
+				"stronghold" : 0,
+				"tower" : 2,
+				"cove": 6,
+				"ruins": 0
+		}
+	}
+}

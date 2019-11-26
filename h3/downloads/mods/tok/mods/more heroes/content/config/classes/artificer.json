@@ -1,0 +1,91 @@
+{
+	"artificer" :
+	{
+		"animation" : {
+			"battle" : 
+			{
+				"female" : "classes/artificer/female.def",
+				"male"   : "classes/artificer/male.def"
+			}
+		},
+		"mapObject" : {
+			"templates" : {
+				"default" : { 
+					"animation" : "classes/artificer/maleAdv.def",
+					"editorAnimation": "classes/editorDefault.def" 
+				}
+			}
+		},
+		"name" : "Artificer",
+		"faction" : "neutral",
+		"commander" : "goldGolem",
+		"affinity" : "magic",
+		"primarySkills" :
+		{
+			"attack"     : 0,
+			"defence"    : 0,
+			"spellpower" : 2,
+			"knowledge"  : 3
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 10,
+			"defence"    : 10,
+			"spellpower" : 30,
+			"knowledge"  : 50
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 20,
+			"defence"    : 20,
+			"spellpower" : 30,
+			"knowledge"  : 30
+		},
+		"secondarySkills" :
+		{ 
+			"pathfinding": 0,
+			"archery": 0,
+			"logistics": 6,
+			"scouting": 5,
+			"diplomacy": 0,
+			"navigation": 0,
+			"wisdom": 9,
+			"mysticism": 8,
+			"luck": 4,
+			"eagleEye": 7,
+			"fireMagic": 8,
+			"airMagic": 7,
+			"earthMagic": 0,
+			"waterMagic": 0,
+			"scholar": 8,
+			"learning": 9,
+			"intelligence": 10,
+			"sorcery": 5,
+			"resistance": 5,
+			"firstAid": 0,
+			"armorer": 3,
+			"artillery": 5,
+			"ballistics": 4,
+			"estates": 0,
+			"leadership": 0,
+			"necromancy": 0,
+			"offence": 0,
+			"tactics": 4
+		},
+		"defaultTavern" : 4,
+		"tavern" :
+		{
+				"castle" : 6,
+				"conflux" : 8,
+				"dungeon" : 2,
+				"fortress" : 3,
+				"inferno" : 2,
+				"necropolis" : 0,
+				"rampart" : 5,
+				"stronghold" : 0,
+				"tower" : 10,
+				"cove": 2,
+				"ruins": 3
+		}
+	}
+}

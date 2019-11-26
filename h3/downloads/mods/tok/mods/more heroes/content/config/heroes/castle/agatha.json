@@ -1,0 +1,33 @@
+{
+	"h_agatha" : {
+		"army" : [
+			{ "creature" : "cr_wendigo", "max" : 25, "min" : 20 },
+			{ "creature" : "archer", "max" : 7, "min" : 4 },
+			{ "creature" : "griffin", "max" : 2, "min" : 3 }
+		],
+		"female": true,
+		"class" : "cleric",
+		"images" : {
+			"large" : "heroes/castle/agatha_l.bmp",
+			"small" : "heroes/castle/agatha_s.bmp",
+			"specialtyLarge" : "heroes/castle/agatha_sl.bmp",
+			"specialtySmall" : "heroes/castle/agatha_ss.bmp"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "learning" },
+			{ "level" : "basic", "skill" : "firstAid" }
+		],
+		"specialty" : {
+			"creature" : "angel"
+		},
+		"texts" : {
+			"biography" : "",
+			"name" : "Agatha",
+			"specialty" : {
+				"description" : "{Angel}\n",
+				"name" : "Angel",
+				"tooltip" : ""
+			}
+		}
+	}
+}

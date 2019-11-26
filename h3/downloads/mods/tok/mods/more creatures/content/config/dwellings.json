@@ -1,0 +1,10 @@
+{
+	"core:creatureGeneratorCommon" : {
+		
+	},
+	"core:creatureGeneratorSpecial" : {
+		"types" : {
+
+		}
+	}
+}

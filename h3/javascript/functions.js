@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded',function(){
     var html = []
     var hero, secondary;
     heroes.sort(function(a, b) {
-        return a.faction+a.class > b.faction+b.class;
+        a.status = a.status != undefined ? a.status : 5;
+        b.status = b.status != undefined ? b.status : 5;
+        return ''+a.status+a.faction+a.class > ''+b.status+b.faction+b.class;
     });
     for (index in heroes) {
         hero = heroes[index]
@@ -16,7 +18,26 @@ document.addEventListener('DOMContentLoaded',function(){
             html += '<img src="img/secondary/'+secondary.type+'-'+secondary.level+'.bmp" alt="'+secondary.type+'">'
         }
         html += '</td>'
-        html += '<td class="text-center text-secondary"><i class="far fa-circle fa-lg"></i><br/><small>not yet</small></td>'
+        switch(hero.status){
+            case 0: //'json':
+                html += '<td class="text-center text-light"><i class="fas fa-code fa-lg"></i><br/><small>coding json</small></td>'
+                break;
+            case 1: //'skill':
+                html += '<td class="text-center text-info"><i class="fas fa-magic fa-lg"></i><br/><small>coding abilities</small></td>'
+                break;
+            case 2: //'lore':
+                html += '<td class="text-center text-warning"><i class="fas fa-book fa-lg"></i><br/><small>need lore</small></td>'
+                break;
+            case 3: //'test':
+                html += '<td class="text-center text-danger"><i class="fas fa-check fa-lg"></i><br/><small>ready for test</small></td>'
+                break;
+            case 4: //'ready':
+                html += '<td class="text-center text-success"><i class="fas fa-check-double fa-lg"></i><br/><small>finished</small></td>'
+                break;
+            case undefined:
+            default:
+                html += '<td class="text-center text-secondary"><i class="far fa-lightbulb fa-lg"></i><br/><small>working idea</small></td>'
+        }
         html += '<td><b><span class="text-secondary">VCMI</span><br/><span class="text-capitalize">'+hero.faction+'</span></b></td></tr>'
     }
     $('#heroes-data').html(html)
@@ -29,9 +50,10 @@ var heroes = [
         class: 'cleric',
         secondary: [{
             type: 'wisdom',level: 'basic'},{
-            type: 'firstAid',level: 'basic'
+            type: 'firstaid',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 0
     },
     {
         name: 'elena',
@@ -41,7 +63,8 @@ var heroes = [
             type: 'leadership',level: 'basic'},{
             type: 'tactics',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'richard',
@@ -51,7 +74,8 @@ var heroes = [
             type: 'states',level: 'basic'},{
             type: 'luck',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'melchert',
@@ -61,7 +85,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'necromancy',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'balor',
@@ -70,7 +95,8 @@ var heroes = [
         secondary: [{
             type: 'pathfinding',level: 'advanced'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'baltasar',
@@ -80,7 +106,8 @@ var heroes = [
             type: 'logistics',level: 'basic'},{
             type: 'artillery',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'bart',
@@ -90,7 +117,8 @@ var heroes = [
             type: 'scholar',level: 'basic'},{
             type: 'learning',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'edward',
@@ -100,7 +128,8 @@ var heroes = [
             type: 'navigation',level: 'basic'},{
             type: 'tactics',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'marian',
@@ -110,7 +139,8 @@ var heroes = [
             type: 'navigation',level: 'basic'},{
             type: 'diplomacy',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'lucius',
@@ -120,7 +150,8 @@ var heroes = [
             type: 'leadership',level: 'basic'},{
             type: 'resistance',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'lilith',
@@ -130,7 +161,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'firemagic',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'rurik',
@@ -140,7 +172,8 @@ var heroes = [
             type: 'states',level: 'basic'},{
             type: 'armorer',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'hycis',
@@ -150,7 +183,8 @@ var heroes = [
             type: 'states',level: 'basic'},{
             type: 'eagleeye',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'caesar',
@@ -160,17 +194,19 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'artillery',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'bomoh',
-        faction: 'fortress',   
-        class: 'beastmaster',
+        faction: 'stronghold',   
+        class: 'battlemage',
         secondary: [{
-            type: 'mysticism',level: 'basic'},{
-            type: 'firstaid',level: 'basic'
+            type: 'wisdom',level: 'basic'},{
+            type: 'armorer',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'eordan',
@@ -180,7 +216,8 @@ var heroes = [
             type: 'armorer',level: 'basic'},{
             type: 'earthmagic',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'tuuk',
@@ -190,7 +227,8 @@ var heroes = [
             type: 'luck',level: 'basic'},{
             type: 'pathfinding',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'mogh',
@@ -200,7 +238,8 @@ var heroes = [
             type: 'earthmagic',level: 'expert'},{
             type: 'intelligence',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'horae',
@@ -210,7 +249,8 @@ var heroes = [
             type: 'earthmagic',level: 'basic'},{
             type: 'ballistics',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'mabon',
@@ -220,7 +260,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'luck',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'hernandez',
@@ -230,7 +271,8 @@ var heroes = [
             type: 'scholar',level: 'basic'},{
             type: 'diplomacy',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'luna',
@@ -240,7 +282,8 @@ var heroes = [
             type: 'scholar',level: 'basic'},{
             type: 'firstaid',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'damys',
@@ -250,7 +293,8 @@ var heroes = [
             type: 'archery',level: 'basic'},{
             type: 'tactics',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'laurens',
@@ -260,7 +304,8 @@ var heroes = [
             type: 'logistics',level: 'expert'},{
             type: 'states',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'foglio',
@@ -269,7 +314,8 @@ var heroes = [
         secondary: [{
             type: 'luck',level: 'advanced'}
         ],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'elrin',
@@ -279,7 +325,8 @@ var heroes = [
             type: 'archery',level: 'basic'},{
             type: 'scholar',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'viktorya',
@@ -289,7 +336,8 @@ var heroes = [
             type: 'offence',level: 'basic'},{
             type: 'scouting',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'brinn',
@@ -299,7 +347,8 @@ var heroes = [
             type: 'pathfinding',level: 'basic'},{
             type: 'diplomacy',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'ravi',
@@ -309,7 +358,8 @@ var heroes = [
             type: 'necromancy',level: 'basic'},{
             type: 'scholar',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'leon',
@@ -319,7 +369,8 @@ var heroes = [
             type: 'necromancy',level: 'basic'},{
             type: 'armorer',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'lydia',
@@ -329,7 +380,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'mysticism',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'goes',
@@ -339,7 +391,8 @@ var heroes = [
             type: 'navigation',level: 'basic'},{
             type: 'pathfinding',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'stanley',
@@ -349,7 +402,8 @@ var heroes = [
             type: 'necromancy',level: 'basic'},{
             type: 'archery',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'renaud',
@@ -359,17 +413,8 @@ var heroes = [
             type: 'logistics',level: 'basic'},{
             type: 'diplomacy',level: 'basic'
         }],
-        project: 'VCMI'
-    },
-    {
-        name: 'roan',
-        faction: 'stronghold',      
-        class: 'barbarian',
-        secondary: [{
-            type: 'eagleeye',level: 'basic'},{
-            type: 'resistance',level: 'basic'
-        }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'giacomo',
@@ -379,7 +424,8 @@ var heroes = [
             type: 'logistics',level: 'basic'},{
             type: 'intelligence',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'martin',
@@ -389,7 +435,8 @@ var heroes = [
             type: 'leadership',level: 'basic'},{
             type: 'armorer',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'francis',
@@ -399,7 +446,8 @@ var heroes = [
             type: 'necromancy',level: 'basic'},{
             type: 'armorer',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'henrik',
@@ -409,7 +457,8 @@ var heroes = [
             type: 'ballistics',level: 'basic'},{
             type: 'artillery',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'barkan',
@@ -419,7 +468,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'pathfinding',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'dana',
@@ -429,7 +479,8 @@ var heroes = [
             type: 'logistics',level: 'basic'},{
             type: 'armorer',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'etia',
@@ -439,7 +490,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'firemagic',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'hana',
@@ -447,9 +499,10 @@ var heroes = [
         class: 'elementalist',
         secondary: [{
             type: 'wisdom',level: 'basic'},{
-            type: 'airmagic',level: 'basic'
+            type: 'watermagic',level: 'expert'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'keus',
@@ -458,7 +511,8 @@ var heroes = [
         secondary: [{
             type: 'armorer',level: 'expert'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'krystin',
@@ -468,17 +522,19 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'airmagic',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'liana',
         faction: 'conflux',      
-        class: 'elementalist',
+        class: 'planeswalker',
         secondary: [{
-            type: 'wisdom',level: 'basic'},{
-            type: 'resistance',level: 'basic'
+            type: 'scouting',level: 'basic'},{
+            type: 'luck',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'moira',
@@ -487,7 +543,8 @@ var heroes = [
         secondary: [{
             type: 'scholar',level: 'advanced'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'morales',
@@ -497,7 +554,8 @@ var heroes = [
             type: 'navigation',level: 'basic'},{
             type: 'artillery',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'nodens',
@@ -507,7 +565,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'learning',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'nova',
@@ -517,7 +576,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'watermagic',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'pandora',
@@ -527,17 +587,8 @@ var heroes = [
             type: 'firemagic',level: 'basic'},{
             type: 'firstaid',level: 'basic'
         }],
-        project: 'VCMI'
-    },
-    {
-        name: 'rayssa',
-        faction: 'stronghold',      
-        class: 'battlemage',
-        secondary: [{
-            type: 'wisdom',level: 'basic'},{
-            type: 'necromancy',level: 'basic'
-        }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'remer',
@@ -547,7 +598,8 @@ var heroes = [
             type: 'pathfinding',level: 'basic'},{
             type: 'scouting',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'rory',
@@ -557,7 +609,8 @@ var heroes = [
             type: 'artillery',level: 'basic'},{
             type: 'firemagic',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'anna',
@@ -567,7 +620,8 @@ var heroes = [
             type: 'states',level: 'basic'},{
             type: 'leadership',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'diana',
@@ -577,7 +631,8 @@ var heroes = [
             type: 'leadership',level: 'basic'},{
             type: 'archery',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'marcus',
@@ -587,7 +642,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'resistance',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'ferri',
@@ -597,7 +653,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'firemagic',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'joan',
@@ -607,7 +664,8 @@ var heroes = [
             type: 'tactics',level: 'basic'},{
             type: 'resistance',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'kenshin',
@@ -617,17 +675,8 @@ var heroes = [
             type: 'tactics',level: 'basic'},{
             type: 'learning',level: 'basic'
         }],
-        project: 'VCMI'
-    },
-    {
-        name: 'milena',
-        faction: 'castle',      
-        class: 'knight',
-        secondary: [{
-            type: 'leadership',level: 'basic'},{
-            type: 'diplomacy',level: 'basic'
-        }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'prospero',
@@ -637,7 +686,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'airmagic',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'samuel',
@@ -647,17 +697,8 @@ var heroes = [
             type: 'learning',level: 'basic'},{
             type: 'intelligence',level: 'basic'
         }],
-        project: 'VCMI'
-    },
-    {
-        name: 'thomas',
-        faction: 'neutral',      
-        class: 'merchant',
-        secondary: [{
-            type: 'navigation',level: 'basic'},{
-            type: 'learning',level: 'basic'
-        }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'yaxi',
@@ -667,7 +708,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'offence',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'suzzane',
@@ -677,17 +719,8 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'pathfinding',level: 'basic'
         }],
-        project: 'VCMI'
-    },
-    {
-        name: 'macrae',
-        faction: 'ruins',      
-        class: 'warden',
-        secondary: [{
-            type: 'earthmagic',level: 'basic'},{
-            type: 'resistance',level: 'basic'
-        }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'roberts',
@@ -697,17 +730,8 @@ var heroes = [
             type: 'navigation',level: 'basic'},{
             type: 'ballistics',level: 'basic'
         }],
-        project: 'VCMI'
-    },
-    {
-        name: 'melanie',
-        faction: 'conflux',      
-        class: 'elementalist',
-        secondary: [{
-            type: 'sorcery',level: 'basic'},{
-            type: 'watermagic',level: 'expert'
-        }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
         name: 'brigitte',
@@ -716,17 +740,19 @@ var heroes = [
         secondary: [{
             type: 'armorer',level: 'advanced'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     {
-        name: 'cassio',
-        faction: 'neutral',      
-        class: 'bard',
+        name: 'huldra',
+        faction: 'ruins',      
+        class: 'hermit',
         secondary: [{
             type: 'mysticism',level: 'basic'},{
-            type: 'eagleeye',level: 'basic'
+            type: 'sorcery',level: 'basic'
         }],
-        project: 'VCMI'
+        project: 'VCMI',
+        status: 5
     },
     /* {
         name: ,

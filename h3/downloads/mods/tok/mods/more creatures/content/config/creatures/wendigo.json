@@ -1,0 +1,82 @@
+{
+	"cr_wendigo" : 
+	{
+		"name" :
+		{
+			"singular" : "Wendigo",
+			"plural" : "Wendigos"
+		},
+		"level" : 5,
+		"special" : false,
+		"faction" : "neutral", 
+		"cost" : 
+		{
+			"wood" : 0,
+			"mercury" : 0,
+			"ore" : 0,
+			"sulfur" : 0,
+			"crystal" : 0,
+			"gems" : 0,
+			"gold" : 600
+		},
+		"fightValue" : 700,
+		"aiValue" : 0,
+		"growth" : 3,
+		
+		"attack" : 15,
+		"defense" : 11,
+		"hitPoints" : 70,
+		"shots" : 30,
+		"speed" : 10,
+		"damage" :
+		{
+			"min" : 12,
+			"max" : 14
+		},
+		"spellPoints" : 0,
+		"advMapAmount" :
+		{
+			"min" : 9,
+			"max" : 12
+		},
+		"doubleWide" : false,
+		"abilities" : {
+			"fearless":{ 
+				"type" : "FEARLESS"
+			},
+			"fear":{ 
+				"type" : "FEAR"
+			},
+			"defenseReduction":{ 
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 10
+			}
+		},
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "creatures/wendigo/battle.def",
+			"map" : "creatures/wendigo/adventure.def",
+			"iconSmall" : "creatures/wendigo/icon.bmp",
+			"iconLarge" : "creatures/wendigo/portrait.bmp",
+			"timeBetweenFidgets" : 1.00,
+			"troopCountLocationOffset" : 0,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00,
+				"flight" : 1.00
+			}
+		},
+		"sound" : 
+		{
+			"attack": "GELFATTK.wav",
+			"defend": "GELFDFND.wav",
+			"killed": "GELFKILL.wav",
+			"move": "GELFMOVE.wav",
+			"shoot": "GELFSHOT.wav",
+			"wince": "GELFWNCE.wav"
+		}
+	}
+}
