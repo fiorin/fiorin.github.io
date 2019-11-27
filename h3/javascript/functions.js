@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded',function(){
+
+    $('[data-toggle="tooltip"]').tooltip(); 
+})
+
+document.addEventListener('DOMContentLoaded',function(){
     var html = []
     var hero, secondary;
     heroes.sort(function(a, b) {
@@ -18,31 +23,27 @@ document.addEventListener('DOMContentLoaded',function(){
             html += '<img src="img/secondary/'+secondary.type+'-'+secondary.level+'.bmp" alt="'+secondary.type+'">'
         }
         html += '</td>'
-        switch(hero.status){
-            case 0: //'json':
-                html += '<td class="text-center text-light"><i class="fas fa-code fa-lg"></i><br/><small>coding json</small></td>'
-                break;
-            case 1: //'skill':
-                html += '<td class="text-center text-info"><i class="fas fa-magic fa-lg"></i><br/><small>coding abilities</small></td>'
-                break;
-            case 2: //'lore':
-                html += '<td class="text-center text-warning"><i class="fas fa-book fa-lg"></i><br/><small>need lore</small></td>'
-                break;
-            case 3: //'test':
-                html += '<td class="text-center text-danger"><i class="fas fa-check fa-lg"></i><br/><small>ready for test</small></td>'
-                break;
-            case 4: //'ready':
-                html += '<td class="text-center text-success"><i class="fas fa-check-double fa-lg"></i><br/><small>finished</small></td>'
-                break;
-            case undefined:
-            default:
-                html += '<td class="text-center text-secondary"><i class="far fa-lightbulb fa-lg"></i><br/><small>working idea</small></td>'
-        }
+        if(json.indexOf(hero.name) >= 0)
+            html += '<td class="text-center text-light"><i class="fas fa-code fa-lg"></i><br/><small>coding json</small></td>'
+        else if(skill.indexOf(hero.name) >= 0)
+            html += '<td class="text-center text-info"><i class="fas fa-magic fa-lg"></i><br/><small>coding abilities</small></td>'
+        else if(lore.indexOf(hero.name) >= 0)
+            html += '<td class="text-center text-warning"><i class="fas fa-book fa-lg"></i><br/><small>need lore</small></td>'
+        else if(test.indexOf(hero.name) >= 0)
+            html += '<td class="text-center text-danger"><i class="fas fa-check fa-lg"></i><br/><small>ready for test</small></td>'
+        else if(ready.indexOf(hero.name) >= 0)
+            html += '<td class="text-center text-success"><i class="fas fa-check-double fa-lg"></i><br/><small>finished</small></td>'
+        else
+            html += '<td class="text-center text-secondary"><i class="far fa-lightbulb fa-lg"></i><br/><small>working idea</small></td>'
         html += '<td><b><span class="text-secondary">VCMI</span><br/><span class="text-capitalize">'+hero.faction+'</span></b></td></tr>'
     }
     $('#heroes-data').html(html)
 })
-
+var json = []
+var skill = []
+var lore = []
+var test = ['agatha']
+var ready = []
 var heroes = [
     {
         name: 'agatha',
@@ -52,8 +53,7 @@ var heroes = [
             type: 'wisdom',level: 'basic'},{
             type: 'firstaid',level: 'basic'
         }],
-        project: 'VCMI',
-        status: 0
+        project: 'VCMI'
     },
     {
         name: 'elena',
