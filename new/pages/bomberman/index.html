@@ -1,0 +1,20 @@
+<head>
+<script type="text/javascript" src="./game.js"></script>
+<link rel="stylesheet" type="text/css" href="./resource/style.css">
+</head>
+<body>
+<div id="television">
+	<div id="jogadores">
+		<button id="2player" onclick="PrepararJogadores(2);">2</button>
+		<button id="3player" onclick="PrepararJogadores(3);">3</button>
+		<button id="4player" onclick="PrepararJogadores(4);">4</button>
+	</div>
+	<div id="resultado"></div>
+	<div id="relogio"></div>
+	<canvas width="330" height="330" id="tabuleiro" style="border:1px solid #333;"></canvas>
+	<button id="start" onclick="Game();this.style.display='none'">Start</button>
+</div>
+<div id="controle">
+	<a href="./resource/controles.png" target="_blank" align="center"><img src="./resource/controle.png"/></a>
+</div>
+</body>
