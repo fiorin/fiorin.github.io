@@ -10,6 +10,8 @@ blockquote, q { quotes: "" ""; }
 a{color:#fff;text-decoration: none;}
 a:hover{text-decoration: underline;}
 
+@font-face {font-family: "Ink Free"; src: url("fonts/0801c08e5412f54e4b4e9ad146d83a12.eot"); src: url("fonts/0801c08e5412f54e4b4e9ad146d83a12.eot?#iefix") format("embedded-opentype"), url("fonts/0801c08e5412f54e4b4e9ad146d83a12.woff2") format("woff2"), url("fonts/0801c08e5412f54e4b4e9ad146d83a12.woff") format("woff"), url("fonts/0801c08e5412f54e4b4e9ad146d83a12.ttf") format("truetype"); } 
+
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
@@ -41,7 +43,7 @@ header .logo{}
 #welcomeFirstLine{margin-bottom:15px;}
 #welcomeHi{font-size:60px;}
 #welcomeIm{font-size:40px;}
-#welcomeFiorin{font-size:65px;}
+#welcomeFiorin{font-size:65px;font-family: "Ink Free";}
 #welcomeSecondLine{}
 #welcomeIcan{font-size:30px;}
 #welcomeMuchMore{font-size:24px;}
@@ -52,7 +54,7 @@ header .logo{}
 .sliderContent img{max-width:100%;}
 
 #contact{text-shadow:0 1px 2px #000;padding:30px 0;}
-.sectionTitle{font-size:20px;color: #fff;margin-bottom:20px;}
+.sectionTitle{font-size:20px;color: #fff;margin-bottom:20px;padding:0 20px;}
 @media(max-width:640px){
     .sectionTitle{font-size:16px;}
 }
@@ -111,6 +113,8 @@ header .logo{}
 .colorYellow{color:#ffff66}
 .colorPink{color:#ff66cc}
 .colorRosa{color:#e27979}
+.colorBrown{color:#cc9966}
+.colorRed{color:#dc3023}
 
 footer{padding:20px;}
 .phrase{font-size:12px;color:#777;margin: 10px 0;}
