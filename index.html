@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
     <link href="lib/lightbox/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    <link href="lib/slick/slick.css" rel="stylesheet" />
     <!-- END CSS -->
 
     <!-- START Javascript -->
     <script src="lib/jquery/jquery.min.js"></script>  
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> 
     <script src="lib/lightbox/lightbox.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
     <script src="javascript/functions.js"></script> 
     <!-- END Javascript -->
 </head>
@@ -29,7 +31,7 @@
         <nav id="menu">
             <h6 class="menuTitle">Menu</h6>
             <ul id="menuList">
-                <li class="menuItem"><a href="#who">Who i am?</a></li>
+                <li class="menuItem"><a href="#who">Who am I ?</a></li>
                 <li class="menuItem"><a href="#contact">Contact</a></li>
                 <li class="menuItem"><a href="#abilities">Abilities</a></li>
                 <li class="menuItem"><a href="#projects">Projects</a></li>
@@ -61,9 +63,47 @@
                     <section id="characterSlider" class="margin-auto">
                         <div class="eachSlider">
                             <div class="sliderContent position-relative">
-                                <img src="img/character.png" alt="🤓" title="I can code!">
+                                <img src="img/character.png" alt="< code >" title="I can code!" data-toggle="tooltip" data-placement="top">
+                                <div class="floatCaption" style="left: 5%;top: 10%; transform: rotate(-35deg);"> <span>Javascript</span></div>
+                                <div class="floatCaption" style="left: 17%;top: 32%; transform: rotate(-35deg);"><span class="shake-low">PHP</span></div>
+                                <div class="floatCaption" style="left: 1%;top: 53%; transform: rotate(-6deg);"><span class="shake-low">NodeJS</span></div>
+                                <div class="floatCaption" style="left: 9%;top: 73%; transform: rotate(-20deg);"><span class="shake-low">Dart</span></div>
+                                <div class="floatCaption" style="right:7%;top:10%;transform: rotate(23deg);"><span class="shake-low">Python</span></div>
+                                <div class="floatCaption" style="right:4%;top:24%;transform: rotate(10deg);"><span class="shake-low">Zend</span></div>
+                                <div class="floatCaption" style="right:6%;top:56%;transform: rotate(27deg);"><span class="shake-low">Java</span></div>
+                                <div class="floatCaption" style="right:6%;top:74%;transform: rotate(23deg);"><span class="shake-low">Flutter</span></div>
                             </div>
                             <h6 class="sliderTitle text-center">< code ></h6>
+                        </div>
+                        <div class="eachSlider">
+                            <div class="sliderContent position-relative">
+                                <img src="img/character-front.png" alt=".: front .." title="I can do html!" data-toggle="tooltip" data-placement="top">
+                            </div>
+                            <h6 class="sliderTitle text-center">.: front ..</h6>
+                        </div>
+                        <div class="eachSlider">
+                            <div class="sliderContent position-relative">
+                                <img src="img/character-paint.png" alt="editor.png" title="I can edit!" data-toggle="tooltip" data-placement="top">
+                            </div>
+                            <h6 class="sliderTitle text-center">editor.png</h6>
+                        </div>
+                        <div class="eachSlider">
+                            <div class="sliderContent position-relative">
+                                <img src="img/charactergit.png" alt="--version" title="git status" data-toggle="tooltip" data-placement="top">
+                            </div>
+                            <h6 class="sliderTitle text-center">--version</h6>
+                        </div>
+                        <div class="eachSlider">
+                            <div class="sliderContent position-relative">
+                                <img src="img/character-3d.png" alt="3d x,y,z" title="I can model!" data-toggle="tooltip" data-placement="top">
+                            </div>
+                            <h6 class="sliderTitle text-center">3d x,y,z</h6>
+                        </div>
+                        <div class="eachSlider">
+                            <div class="sliderContent position-relative">
+                                <img src="img/character-class.png" alt="101 coding class" title="I can teach something!" data-toggle="tooltip" data-placement="top">
+                            </div>
+                            <h6 class="sliderTitle text-center">101 coding class</h6>
                         </div>
                     </section>
                     <!-- END character slider -->
@@ -87,7 +127,7 @@
 
                 <div class="divider"></div>
                 <section id="abilities">
-                    <h5 class="sectionTitle text-center">Tell me more about your skill, abilities and superpowers...</h5> 
+                    <h5 class="sectionTitle text-center">Tell me more about your skills, abilities and superpowers...</h5> 
                 </section>
             </div>
 
@@ -99,7 +139,7 @@
                             <h3 class="abilityTitle">< code ></h3>
                             <h6 class="abilitySubtitle">I can code!</h6>
                             <p>I think; I invent; I create; it works! Language is just a detail, knowing how to program is solving problems.</p>
-                            <p>No matter if it's on the web, mobile or desktop, there is always a way in this my Swiss army knife mind.</p>
+                            <p>No matter if it's on the web, mobile or desktop, there is always a way in my Swiss army knife mind.</p>
                             <p class="abilitieTags">
                                 <span class="projectTag">#JS</span>
                                 <span class="projectTag">#Php</span>
@@ -123,7 +163,7 @@
                             <h3 class="abilityTitle">.: front ..</h3>
                             <h6 class="abilitySubtitle">Every Pixel Matters</h6>
                             <p>A good looking front is the best friend of a great code.</p>
-                            <p>It's bullshit that a developer doesn't need to know how to make beautiful interfaces. It is survival!</p>
+                            <p>It's nonsense that a developer doesn't need to know how to make beautiful interfaces. It is survival!</p>
                             <p class="abilitieTags">
                                 <span class="projectTag">#HTML5</span>
                                 <span class="projectTag">#CSS</span>
@@ -140,7 +180,7 @@
                     <div class="abilityContainer clearfix">
                         <div class="abilityContent">
                             <h3 class="abilityTitle">editor.png</h3>
-                            <h6 class="abilitySubtitle">Everyone need an editor</h6>
+                            <h6 class="abilitySubtitle">Everyone needs an editor</h6>
                             <p>Editing, drawing or vectoring. I immersed myself in the most diverse editors to cover all the bases.</p>
                             <p class="abilitieTags">
                                 <span class="projectTag">#Photoshop</span>
@@ -176,8 +216,8 @@
                     <div class="abilityContainer clearfix">
                         <div class="abilityContent">
                             <h3 class="abilityTitle">3d x,y,z</h3>
-                            <h6 class="abilitySubtitle">Tripped on a Cartesian plane and falls on a Z axis</h6>
-                            <p>Adventurer 3d, with notions of modeling, texture and animation using Blender.</p>
+                            <h6 class="abilitySubtitle">Tripped on a Cartesian plane and fell on a Z axis</h6>
+                            <p>3D adventurer with notions of modeling, texture and animation using Blender.</p>
                             <p>Focused on small and personal projects, mods and game development.</p>
                             <p class="abilitieTags">
                                 <span class="projectTag">#Blender</span>
@@ -195,8 +235,8 @@
                         <div class="abilityContent">
                             <h3 class="abilityTitle">game dev</h3>
                             <h6 class="abilitySubtitle">↑ ↑ ↓ ↓ ← → ← → B A</h6>
-                            <p>As fun as playing is creating games. They are a hobby and a daily learning.</p>
-                            <p>Already participated in the organization of a <a href="http://seinfo.cm.utfpr.edu.br/seinfo2018/gameJam.html" target="_blank">gameJam</a>, drafted ideas, participate in mod communities, implemented small projects in Unity and Phaser.</p>
+                            <p>Creating games is as fun as playing. They are a hobby and a daily learning.</p>
+                            <p> Staff and planner of a <a href="http://seinfo.cm.utfpr.edu.br/seinfo2018/gameJam.html" target="_blank">gameJam</a>, drafted ideas, participated in mod communities, implemented small projects in Unity and Phaser.</p>
                             <p class="abilitieTags">
                                 <span class="projectTag">#Unity3d</span>
                                 <span class="projectTag">#Phaser</span>

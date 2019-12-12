@@ -12,4 +12,13 @@ document.addEventListener('DOMContentLoaded',function(){
     $('#modal').on('show.bs.modal', function (e) {
         $(this).find('.modal-content').load(e.relatedTarget.href);
     });
+    $('#characterSlider').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        slidesToShow: 1,
+        fade: true
+    });
 })
