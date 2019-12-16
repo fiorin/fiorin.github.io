@@ -22,9 +22,6 @@ body{background: #111 url(img/bg.png) center top;font-family: Calibri, 'Trebuche
 .bgHeaderBottom{background: url(img/bg-header-bottom.png) center bottom repeat-x;}
 header{position:absolute;top:20px;left:20px;}
 header .logo{}
-@media(max-width:1020px){
-    header#logo{display:none;}
-}
 
 #menu{position:fixed;left:0;top:30%;text-shadow:0 1px 2px #000;z-index:100;}
 #menu .menuTitle{text-transform: uppercase;color:#555;font-size:11px;padding-left:10px;margin-bottom:10px;}
@@ -88,7 +85,7 @@ header .logo{}
     .abilityLeft .abilityPreview, .abilityRight .abilityPreview{float:none;padding-left:0;width:100%;}
     .abilityPreview{max-width:250px;margin:0 auto;margin-top:20px;}
 }
-.abilitieTags .projectTag{color:#fff;}
+.abilitieTags .projectTag,.pageTags{color:#fff;}
 
 #projects{}
 #projects a:hover{text-decoration: none;}
@@ -123,3 +120,25 @@ footer{padding:20px;}
 @media(max-width:1000px){.floatCaption{font-size:24px;}}
 @media(max-width:640px){.floatCaption{font-size:22px;}}
 @media(max-width:400px){.floatCaption{font-size:16px;}}
+
+.pageContent{color:#aaa;}
+.pageContent p{font-size:14px;margin-bottom:5px;line-height:16px;}
+.pageSubtitle{font-size:14px;color:#ccc;margin-bottom:15px;}
+.section{padding:55px 0 25px 0;margin-bottom:20px;border-bottom:2px solid #040404;box-shadow:0 2px 4px #0a0a0a;border-top:1px solid #0a0a0a;}
+.pageContainer{width:640px;max-width:100%;margin: 0 auto;padding:0 20px}
+.section{background: #2a2929;}
+.pageMinorTitle{font-size:20px;color:#fff;margin-bottom:5px;}
+@media(max-width:640px){
+    .pageContent{float:none;width:100%;}
+    .pageTags, .pageSubtitle{text-align: center;}
+}
+
+
+#heroesTable td{padding:5px 10px;}
+#heroesTable td small{font-size:13px;}
+#heroesTable.table-bordered{border:0px solid #444;border-collapse: collapse;}
+#heroesTable.table-bordered td{border:1px solid #222;}
+.hero img{display:inline-block;vertical-align:top;padding:1px;border:1px solid #333}
+.hero .heroName{font-size:15px;font-weight:bold;line-height:15px;}
+.hero .heroClass{font-size:14px;}
+table.table-responsive{overflow-x: hidden;}

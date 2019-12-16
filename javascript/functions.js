@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded',function(){
         speed: 300,
         autoplay: true,
         slidesToShow: 1,
-        fade: true
+        fade: true,
+        pauseOnHover: false,
+        lazyLoad: 'progressive'
     });
 })
