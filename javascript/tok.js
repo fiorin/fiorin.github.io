@@ -23,13 +23,41 @@ document.addEventListener("DOMContentLoaded",function(){
         for (index in hero[3]) {
             html += '<img src="../img/tok/secondary/'+hero[3][index][0]+'-'+hero[3][index][1]+'.bmp"/>'
         }
-        html += '<td><small>'+hero[4]+'</small></td>'
+        html += '<td class="nodisplay-xs"><small>'+hero[4]+'</small></td>'
         html += '</td>'
         html += '</tr>'
     }
     $("#heroes-data").html(html)
     $("#heroesCount").html(count+" ready from "+heroes.length)
+    var creature;
+    html = ''
+    for (index in creatures) { 
+        creature = creatures[index]
+        html += '<div class="creature col-lg-4">'
+        html += '<p class="nomargin text-capitalize"><b>'+creature[0]+'</b></p>'
+        html += '<p class="text-secondary">lvl '+creature[1]+'</p>'
+        html += '<p class="text-dark">'+creature[2]+'</p>'
+        html += '<div class="margin-top margin-bottom"><img src="../img/tok/creatures/'+creature[3]+'" alt="'+creature[0]+'" class="display-block"></div>'
+        html += '</div>'
+    }
+    $("#creatures-data").html(html)
+    $("#creaturesCount").html("1 working from "+creatures.length)
+    $('[data-toggle="tooltip"]').tooltip(); 
 })
+var creatures = [
+    ["wendigo",5,"neutral","wendigo.jpg"],
+    ["firbolg",3,"neutral","firbolg.gif"],
+    ["noble firbolg",3,"neutral","firbolgup.jpg"],
+    ["plague doctor",2,"neutral","plague.jpg"],
+    ["sybil",4,"neutral","witch.jpg"],
+    ["seer",4,"neutral","witchup.jpg"],
+    ["bear",3,"neutral","bear.jpg"],
+    ["dire bear",3,"neutral","bearup.jpg"],
+    ["gnome",1,"neutral","gnome.jpg"],
+    ["peryton",3,"neutral","peryton.jpg"],
+    ["grand peryton",3,"neutral","grandperyton.jpg"],
+    ["executioner",2,"neutral","executioner.jpg"]
+]
 var heroes = [
     ["agatha","castle","cleric",[["wisdom","basic"],["firstaid","basic"]],"It was a shock to the noble military family when Agatha decided to give up all their legacy and join the serenity of religion. But the essence of the battle still remains for sure."],
     ["richard","castle","knight",[["states","basic"],["luck","basic"]],"The acrobat prince. This is how Richard was known in his youth. Stunts that were nothing more than a mix of arrogance and luck."],

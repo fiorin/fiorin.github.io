@@ -133,12 +133,13 @@ footer{padding:20px;}
     .pageTags, .pageSubtitle{text-align: center;}
 }
 
-
 #heroesTable td{padding:5px 10px;}
 #heroesTable td small{font-size:13px;}
 #heroesTable.table-bordered{border:0px solid #444;border-collapse: collapse;}
-#heroesTable.table-bordered td{border:1px solid #222;}
-.hero img{display:inline-block;vertical-align:top;padding:1px;border:1px solid #333}
+#heroesTable.table-bordered td,.creature{border:1px solid #222;}
+.hero img,.creature img{display:inline-block;vertical-align:top;padding:1px;border:1px solid #333}
 .hero .heroName{font-size:15px;font-weight:bold;line-height:15px;}
 .hero .heroClass{font-size:14px;}
 table.table-responsive{overflow-x: hidden;}
+.creature{padding:15px 10px;}
+.creature img{margin:0 auto;display:block;}
