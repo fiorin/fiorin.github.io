@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded",function(){
     var html = []
     var hero, secondary;
+    var prcHero = [];
     heroes.sort(function(a, b) {
         var c = a[4] == "" ? "z" : "a"; 
         var d = b[4] == "" ? "z" : "a"; 
@@ -10,6 +11,11 @@ document.addEventListener("DOMContentLoaded",function(){
     var count = 0
     for (index in heroes) { 
         hero = heroes[index]
+        if (!prcHero[hero[1]]) {
+            prcHero[hero[1]] = 1; 
+        } else {
+            prcHero[hero[1]]++;
+        }
         if (hero[4].length > 0){
             count++;
         } 
@@ -29,6 +35,16 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     $("#heroes-data").html(html)
     $("#heroesCount").html(count+" ready from "+heroes.length)
+    html = ''
+    var prc
+    for (index in prcHero) {
+        prc = prcHero[index] / 15 * 100
+        html += '<label class="polllabel">'+index+' ['+prcHero[index]+']</label>',
+        html += '<div class="poll">',
+        html += '<div class="pollResult" style="width:'+prc+'%"></div> ',
+        html += '</div>'
+    }
+    $("#heroes-poll").html(html)
     var creature;
     html = ''
     for (index in creatures) { 
@@ -65,8 +81,8 @@ var heroes = [
     ["moira","castle","cleric",[["scholar","advanced"]],""],
     ["martin","castle","knight",[["leadership","basic"],["armorer","basic"]],""],
     ["brigitte","castle","knight",[["armorer","advanced"]],"Brigitte joined the army command contrary to all expectations. Though initially mocked by her soldiers she was taken seriously when spared the lives of hundreds of men with her firm fist during a siege."],
-    ["eordan","dungeon","warlock",[["armorer","basic"],["earthmagic","basic"]],""],
-    ["hana","conflux","elementalist",[["wisdom","basic"],["watermagic","basic"]],""],
+    ["eordan","dungeon","warlock",[["armorer","basic"],["earthmagic","basic"]],"Although a renowned knight in his youth, Eordan has found in the dark knowledge of the elements the strength he needs in his men."],
+    ["hana","conflux","elementalist",[["wisdom","basic"],["watermagic","basic"]],"Born in an abandoned mill on the banks of a stream. Hana shaped her principles based on the purity and flow of the current."],
     ["ferri","conflux","elementalist",[["wisdom","basic"],["firemagic","basic"]],""],
     ["liana","conflux","planeswalker",[["scouting","basic"],["luck","basic"]],""],
     ["pandora","conflux","planeswalker",[["firemagic","basic"],["firstaid","basic"]],""],
@@ -107,10 +123,10 @@ var heroes = [
     ["damys","rampart","ranger",[["archery","basic"],["tactics","basic"]],""],
     ["elrin","rampart","ranger",[["archery","basic"],["scholar","basic"]],""],
     ["mogh","ruins","hermit",[["earthmagic","expert"],["intelligence","basic"]],""],
-    ["horae","ruins","hermit",[["earthmagic","basic"],["ballistics","basic"]],""],
-    ["mabon","ruins","hermit",[["wisdom","basic"],["luck","basic"]],""],
-    ["huldra","ruins","hermit",[["mysticism","basic"],["sorcery","basic"]],""],
-    ["balor","ruins","warden",[["pathfinding","advanced"]],""],
+    ["horae","ruins","hermit",[["earthmagic","basic"],["ballistics","basic"]],"Horae is a fanatic druid who does not believe in unnatural buildings. If we come from the land, there is no reason to create barriers between us."],
+    ["mabon","ruins","hermit",[["wisdom","basic"],["luck","basic"]],"A gardener proud of his seedlings, the spreading of a decelerated life and peaceful coexistence. Probably influenced by his supernatural luck that guarantees surprises in his days and blossoming of his plants"],
+    ["huldra","ruins","hermit",[["mysticism","basic"],["sorcery","basic"]],"A nature spirit of great beauty, who hypnotizes men and seduces them into the depths of the forest."],
+    ["balor","ruins","warden",[["pathfinding","advanced"]],"A giant lumberjack hiding in his cabin at the foot of the great mountain. Balor only watches the travelers, but doesn't want become friendly with anyone."],
     ["tuuk","stronghold","barbarian",[["luck","basic"],["pathfinding","basic"]],""],
     ["dana","stronghold","barbarian",[["logistics","basic"],["armorer","basic"]],""],
     ["diana","stronghold","barbarian",[["leadership","basic"],["archery","basic"]],""],
@@ -125,10 +141,10 @@ var heroes = [
     ["prospero","conflux","planeswalker",[["resistance","basic"],["airmagic","basic"]],""],
     ["angeli","tower","wizard",[["wisdom","basic"],["airmagic","basic"]],""],
     ["duqk","cove","navigator",[["navigation","basic"],["luck","basic"]],""],
-    ["iron","tower","alchemist",[["armorer","basic"],["resistance","basic"]],""],
-    ["kuna","stronghold","barbarian",[["scouting","basic"],["pathfinding","basic"]],""],
+    ["hron","tower","alchemist",[["armorer","basic"],["resistance","basic"]],""],
+    ["kuna","stronghold","barbarian",[["scouting","basic"],["pathfinding","basic"]],"Kuna has never succeeded in his attempts to incorporate into the chaotic army of his tribe, but on the front lines there is no more elusive scout."],
     ["lania","inferno","herectic",[["wisdom","basic"],["firstaid","basic"]],""],
-    ["mira","ruins","wizard",[["firstaid","advanced"]],""],
+    ["myra","ruins","wizard",[["firstaid","advanced"]],"Myra learned from her mother the efficiency of plants to feed her siblings, heal the wounds and even eliminate those who threaten you. Today, she knows how to do it, and she did it more than once."],
     ["philip","castle","knight",[["leadership","basic"],["navigation","basic"]],""],
     ["tris","rampart","rangers",[["archery","basic"],["scouting","basic"]],""],
     ["zu","inferno","demoniac",[["offence","advanced"]],""],

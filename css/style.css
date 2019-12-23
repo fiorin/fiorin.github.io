@@ -143,3 +143,10 @@ footer{padding:20px;}
 table.table-responsive{overflow-x: hidden;}
 .creature{padding:15px 10px;}
 .creature img{margin:0 auto;display:block;}
+#log{font-size:12px;margin-top:20px;color:#888;}
+.logTitle{font-size:13px;color:#fff;margin-bottom:5px;}
+.log{border-bottom:1px solid #777;margin-bottom:5px;padding-bottom:5px;}
+#log ul{list-style-type: disc;padding-left:10px}
+.poll{height:10px;width:300px;background:#444;position:relative;border:1px solid #ccc;}
+.pollResult{height:100%;background:#999;position:absolute;top:0;bottom:0;left:0}
+.polllabel{font-size:12px !important;}

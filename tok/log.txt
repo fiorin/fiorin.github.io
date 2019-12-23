@@ -1,0 +1,24 @@
+------------------ v0.1
++ hero agatha
++ hero brigitte
++ hero richard
++ hero elena
++ creature wendigo
++ creature nightmare
+------------------ v0.2
++ hero eordan
++ hero hana
++ hero mabon
++ hero huldra
++ hero horae
++ hero myra
++ hero hron !
++ hero suzzane !
++ hero kuna
++ hero balor
++ firbolg
+------------------ v0.3
+------------------ v0.4
+------------------ v0.5
+------------------ v0.6
+------------------ v0.7
