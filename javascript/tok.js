@@ -57,18 +57,19 @@ document.addEventListener("DOMContentLoaded",function(){
         html += '</div>'
     }
     $("#creatures-data").html(html)
-    $("#creaturesCount").html("1 working from "+creatures.length)
+    $("#creaturesCount").html("2 working from "+creatures.length)
     $('[data-toggle="tooltip"]').tooltip(); 
 })
 var creatures = [
-    ["wendigo",5,"neutral","wendigo.jpg"],
-    ["firbolg",3,"neutral","firbolg.gif"],
-    ["noble firbolg",3,"neutral","firbolgup.jpg"],
-    ["plague doctor",2,"neutral","plague.jpg"],
-    ["sybil",4,"neutral","witch.jpg"],
-    ["seer",4,"neutral","witchup.jpg"],
-    ["bear",3,"neutral","bear.jpg"],
-    ["dire bear",3,"neutral","bearup.jpg"],
+    ["wendigo",5,"neutral","wendigo.gif"],
+    ["firbolg",4,"neutral","firbolg.gif"],
+    ["noble firbolg",4,"neutral","firbolgup.jpg"],
+    ["plague doctor",3,"neutral","plague.jpg"],
+    ["kobold",1,"neutral","kobold.jpg"],
+    ["sybil",5,"neutral","witch.jpg"],
+    ["seer",5,"neutral","witchup.jpg"],
+    ["bear",2,"neutral","bear.jpg"],
+    ["dire bear",2,"neutral","bearup.jpg"],
     ["gnome",1,"neutral","gnome.jpg"],
     ["peryton",3,"neutral","peryton.jpg"],
     ["grand peryton",3,"neutral","grandperyton.jpg"],
@@ -119,7 +120,7 @@ var heroes = [
     ["giacomo","neutral","merchant",[["logistics","basic"],["intelligence","basic"]],""],
     ["brinn","rampart","druid",[["pathfinding","basic"],["diplomacy","basic"]],""],
     ["krystin","rampart","druid",[["wisdom","basic"],["airmagic","basic"]],""],
-    ["suzzane","rampart","druid",[["wisdom","basic"],["pathfinding","basic"]],""],
+    ["suzzane","rampart","druid",[["wisdom","basic"],["pathfinding","basic"]],"Magic is not the most popular subject among centaurs. Even fewer are the young people with aptitude for the thing. Suzzane is a young centaur who frightens many leaders with her tricks and knowledge."],
     ["damys","rampart","ranger",[["archery","basic"],["tactics","basic"]],""],
     ["elrin","rampart","ranger",[["archery","basic"],["scholar","basic"]],""],
     ["mogh","ruins","hermit",[["earthmagic","expert"],["intelligence","basic"]],""],
@@ -141,11 +142,11 @@ var heroes = [
     ["prospero","conflux","planeswalker",[["resistance","basic"],["airmagic","basic"]],""],
     ["angeli","tower","wizard",[["wisdom","basic"],["airmagic","basic"]],""],
     ["duqk","cove","navigator",[["navigation","basic"],["luck","basic"]],""],
-    ["hron","tower","alchemist",[["armorer","basic"],["resistance","basic"]],""],
+    ["hron","tower","alchemist",[["armorer","basic"],["resistance","basic"]],"Built to be an obedient and unwilling guardian for eternity, it didn't take many generations for Hron to realize that those who swore obedience were no longer around to claim loyalty and so could gather his brothers to build their own destiny."],
     ["kuna","stronghold","barbarian",[["scouting","basic"],["pathfinding","basic"]],"Kuna has never succeeded in his attempts to incorporate into the chaotic army of his tribe, but on the front lines there is no more elusive scout."],
     ["lania","inferno","herectic",[["wisdom","basic"],["firstaid","basic"]],""],
     ["myra","ruins","wizard",[["firstaid","advanced"]],"Myra learned from her mother the efficiency of plants to feed her siblings, heal the wounds and even eliminate those who threaten you. Today, she knows how to do it, and she did it more than once."],
-    ["philip","castle","knight",[["leadership","basic"],["navigation","basic"]],""],
+    ["philip","castle","knight",[["leadership","basic"],["navigation","basic"]],"Philip spent many years of his military life preparing for the chance to free the seas of all piracy. That opportunity came in the form of a command position and a crew that shares their will."],
     ["tris","rampart","rangers",[["archery","basic"],["scouting","basic"]],""],
     ["zu","inferno","demoniac",[["offence","advanced"]],""],
     ["medea","dungeon","warlock",[["wisdom","basic"],["eagleeye","advanced"]],""],

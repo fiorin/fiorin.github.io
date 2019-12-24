@@ -12,10 +12,11 @@
 + hero huldra
 + hero horae
 + hero myra
-+ hero hron !
-+ hero suzzane !
++ hero hron
++ hero suzzane
 + hero kuna
 + hero balor
++ hero philip
 + firbolg
 ------------------ v0.3
 ------------------ v0.4
