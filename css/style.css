@@ -150,3 +150,6 @@ table.table-responsive{overflow-x: hidden;}
 .poll{height:10px;width:300px;background:#444;position:relative;border:1px solid #ccc;}
 .pollResult{height:100%;background:#999;position:absolute;top:0;bottom:0;left:0}
 .polllabel{font-size:12px !important;}
+@media(max-width:640px){
+    .herobg{display:none;}
+}

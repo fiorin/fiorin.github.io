@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded",function(){
         for (index in hero[3]) {
             html += '<img src="../img/tok/secondary/'+hero[3][index][0]+'-'+hero[3][index][1]+'.bmp"/>'
         }
-        html += '<td class="nodisplay-xs"><small>'+hero[4]+'</small></td>'
+        html += '<td class="herobg"><small>'+hero[4]+'</small></td>'
         html += '</td>'
         html += '</tr>'
     }
