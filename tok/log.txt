@@ -1,11 +1,18 @@
 ------------------ v0.1
+mod more creatures
++ creature wendigo
+mod more heroes
 + hero agatha
-+ hero brigitte
 + hero richard
 + hero elena
-+ creature wendigo
+mod another creatures
 + creature nightmare
+mod another heroes
++ hero brigitte
 ------------------ v0.2
+mod more creatures
++ firbolg
+mod more heroes
 + hero eordan
 + hero hana
 + hero mabon
@@ -17,7 +24,8 @@
 + hero kuna
 + hero balor
 + hero philip
-+ firbolg
+mod another heroes
++ hero lucius
 ------------------ v0.3
 ------------------ v0.4
 ------------------ v0.5
