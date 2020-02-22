@@ -8,24 +8,23 @@ mod more heroes
 mod another creatures
 + creature nightmare
 mod another heroes
-+ hero brigitte
++ hero brigitte (pending specialty)
 ------------------ v0.2
-mod more creatures
-+ firbolg
 mod more heroes
 + hero eordan
 + hero hana
-+ hero mabon
-+ hero huldra
-+ hero horae
-+ hero myra
 + hero hron
 + hero suzzane
 + hero kuna
-+ hero balor
 + hero philip
 mod another heroes
 + hero lucius
+mod ruins base
++ hero mabon (pending creatures)
++ hero huldra (pending creatures)
++ hero horae (pending creatures)
++ hero myra (pending creatures)
++ hero balor (pending creatures)
 ------------------ v0.3
 ------------------ v0.4
 ------------------ v0.5
