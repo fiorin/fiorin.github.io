@@ -3,7 +3,6 @@ mod more creatures
 + creature wendigo
 mod more heroes
 + hero agatha
-+ hero richard
 + hero elena
 mod another creatures
 + creature nightmare
