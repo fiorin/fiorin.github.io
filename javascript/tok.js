@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded",function(){
         html += '<p class="heroClass nomargin text-secondary text-capitalize">'+hero[2]+'</p></div>'
         html += '<p class="heroClass nomargin text-dark text-capitalize text-bold">'+hero[1]+'</p></div></td>'
         html += '<td><img src="../img/tok/heroes/'+hero[0]+'_l.bmp"/></td>'
-        html += '<td><img src="../img/tok/specialty/'+hero[0]+'_sl.bmp"/></td>'
-        html += '<td class="text-nowrap">'
+        html += '<td class=""><img src="../img/tok/specialty/'+hero[0]+'_sl.bmp"/></td>'
+        html += '<td class="herobg text-nowrap">'
         for (index in hero[3]) {
             html += '<img src="../img/tok/secondary/'+hero[3][index][0]+'-'+hero[3][index][1]+'.bmp"/>'
         }
@@ -67,15 +67,13 @@ var creatures = [
     ["plague doctor",3,"neutral (rigging)","plague.jpg"],
     ["psycho",3,"neutral (rigging)","psycho.jpg"],
     ["aboriginal",3,"neutral (rigging)","aboriginal.jpg"],
-    ["kobold",1,"neutral (rigging)","kobold.jpg"],
     ["sybil",5,"neutral (reworking)","witch.jpg"],
     ["seer",5,"neutral (reworking)","witchup.jpg"],
     ["bear",2,"neutral (reworking)","bear.jpg"],
     ["dire bear",2,"neutral (reworking)","bearup.jpg"],
     ["gnome",1,"neutral (reworking)","gnome.jpg"],
     ["peryton",3,"neutral (reworking)","peryton.jpg"],
-    ["grand peryton",3,"neutral (reworking)","grandperyton.jpg"],
-    ["executioner",2,"neutral (sketching)","executioner.jpg"],
+    ["grand peryton",3,"neutral (reworking)","grandperyton.jpg"]
 ]
 var heroes = [
     ["agatha","castle","cleric",[["wisdom","basic"],["firstaid","basic"]],"It was a shock to the noble military family when Agatha decided to give up all their legacy and join the serenity of religion. But the essence of the battle still remains for sure."],
@@ -89,7 +87,7 @@ var heroes = [
     ["bart","cove","navigator",[["scholar","basic"],["learning","basic"]],""],
     ["caesar","cove","navigator",[["wisdom","basic"],["scouting","basic"]],""],
     ["yaxi","cove","navigator",[["wisdom","basic"],["offence","basic"]],""],
-    ["nodens","ruins","warden",[["resistance","basic"],["wisdom","basic"]],""],
+    ["nodens","ruins","hunter",[["resistance","basic"],["wisdom","basic"]],""],
     ["baltasar","fortress","beastmaster",[["logistics","basic"],["artillery","basic"]],""],
     ["goes","fortress","beastmaster",[["navigation","basic"],["pathfinding","basic"]],""],
     ["lydia","fortress","witch",[["wisdom","basic"],["mysticism","basic"]],""],
@@ -109,10 +107,9 @@ var heroes = [
     ["horae","ruins","hermit",[["earthmagic","basic"],["ballistics","basic"]],"Horae is a fanatic druid who does not believe in unnatural buildings. If we come from the land, there is no reason to create barriers between us."],
     ["mabon","ruins","hermit",[["wisdom","basic"],["luck","basic"]],"A gardener proud of his seedlings, the spreading of a decelerated life and peaceful coexistence. Probably influenced by his supernatural luck that guarantees surprises in his days and blossoming of his plants"],
     ["huldra","ruins","hermit",[["mysticism","basic"],["sorcery","basic"]],"A nature spirit of great beauty, who hypnotizes men and seduces them into the depths of the forest."],
-    ["balor","ruins","warden",[["pathfinding","advanced"]],"A giant lumberjack hiding in his cabin at the foot of the great mountain. Balor only watches the travelers, but doesn't want become friendly with anyone."],
+    ["balor","ruins","hunter",[["pathfinding","advanced"]],"A giant lumberjack hiding in his cabin at the foot of the great mountain. Balor only watches the travelers, but doesn't want become friendly with anyone."],
     ["tuuk","stronghold","barbarian",[["luck","basic"],["pathfinding","basic"]],""],
     ["bomoh","ruins","hermit",[["wisdom","basic"],["armorer","basic"]],""],
-    ["viktorya","tower","alchemist",[["offence","basic"],["scouting","basic"]],""],
     ["henrik","tower","alchemist",[["ballistics","basic"],["artillery","basic"]],""],
     ["keus","tower","alchemist",[["armorer","expert"]],""],
     ["barkan","neutral","bard",[["wisdom","basic"],["pathfinding","basic"]],""],
