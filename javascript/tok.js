@@ -67,12 +67,9 @@ var creatures = [
     ["plague doctor",3,"neutral (rigging)","plague.jpg"],
     ["psycho",3,"neutral (rigging)","psycho.jpg"],
     ["aboriginal",3,"neutral (rigging)","aboriginal.jpg"],
-    ["sybil",5,"neutral (reworking)","witch.jpg"],
     ["seer",5,"neutral (reworking)","witchup.jpg"],
-    ["bear",2,"neutral (reworking)","bear.jpg"],
     ["dire bear",2,"neutral (reworking)","bearup.jpg"],
     ["gnome",1,"neutral (reworking)","gnome.jpg"],
-    ["peryton",3,"neutral (reworking)","peryton.jpg"],
     ["grand peryton",3,"neutral (reworking)","grandperyton.jpg"]
 ]
 var heroes = [
@@ -93,7 +90,6 @@ var heroes = [
     ["lydia","fortress","witch",[["wisdom","basic"],["mysticism","basic"]],""],
     ["lucius","inferno","demoniac",[["leadership","basic"],["logistics","basic"]],"Lucius is third in command of the troops from hell. Very few hold such power, since the longevity of the position is only guaranteed by the cruelty and malice of the occupant."],
     ["etia","inferno","demoniac",[["resistance","basic"],["firemagic","basic"]],""],
-    ["lilith","inferno","herectic",[["wisdom","basic"],["firemagic","basic"]],""],
     ["ravi","necropolis","necromancer",[["necromancy","basic"],["scholar","basic"]],""],
     ["hernandez","neutral","bard",[["scholar","basic"],["diplomacy","basic"]],""],
     ["luna","neutral","bard",[["scholar","basic"],["firstaid","basic"]],""],
@@ -114,7 +110,7 @@ var heroes = [
     ["keus","tower","alchemist",[["armorer","expert"]],""],
     ["barkan","neutral","bard",[["wisdom","basic"],["pathfinding","basic"]],""],
     ["rory","neutral","artificer",[["artillery","basic"],["firemagic","basic"]],""],
-    ["prospero","conflux","planeswalker",[["resistance","basic"],["airmagic","expert"]],""],
+    ["prospero","conflux","planeswalker",[["wisdom","basic"],["airmagic","basic"]],""],
     ["duqk","cove","navigator",[["navigation","basic"],["luck","basic"]],""],
     ["hron","tower","alchemist",[["armorer","basic"],["resistance","basic"]],"Built to be an obedient and unwilling guardian for eternity, it didn't take many generations for Hron to realize that those who swore obedience were no longer around to claim loyalty and so could gather his brothers to build their own destiny."],
     ["kuna","stronghold","barbarian",[["scouting","basic"],["pathfinding","basic"]],"Kuna has never succeeded in his attempts to incorporate into the chaotic army of his tribe, but on the front lines there is no more elusive scout."],
