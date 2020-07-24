@@ -65,7 +65,7 @@ var creatures = [
     ["firbolg",4,"neutral (rigging)","firbolg.jpg"],
     ["noble firbolg",4,"neutral (rigging)","firbolgup.jpg"],
     ["plague doctor",3,"neutral (rigging)","plague.jpg"],
-    // ["psycho",3,"neutral (rigging)","psycho.jpg"],
+    ["illusionist",2,"neutral (rigging)","illusionist.jpg"],
     ["aboriginal",2,"neutral","aboriginal.jpg"],
     // ["seer",5,"neutral (reworking)","witchup.jpg"],
     // ["dire bear",2,"neutral (reworking)","bearup.jpg"],
