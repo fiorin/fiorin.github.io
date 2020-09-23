@@ -57,19 +57,18 @@ document.addEventListener("DOMContentLoaded",function(){
         html += '</div>'
     }
     $("#creatures-data").html(html)
-    $("#creaturesCount").html("2 working from "+creatures.length)
+    $("#creaturesCount").html("3 working from "+creatures.length)
     $('[data-toggle="tooltip"]').tooltip(); 
 })
 var creatures = [
     ["wendigo",5,"neutral","wendigo.jpg"],
     ["firbolg",4,"neutral (rigging)","firbolg.jpg"],
-    ["noble firbolg",4,"neutral (rigging)","firbolgup.jpg"],
+    //["noble firbolg",4,"neutral (rigging)","firbolgup.jpg"],
     ["plague doctor",3,"neutral (rigging)","plague.jpg"],
-    ["illusionist",2,"neutral (rigging)","illusionist.jpg"],
-    ["aboriginal",2,"neutral","aboriginal.jpg"],
+    ["aboriginal",3,"neutral","aboriginal.jpg"],
     // ["seer",5,"neutral (reworking)","witchup.jpg"],
     // ["dire bear",2,"neutral (reworking)","bearup.jpg"],
-    // ["gnome",1,"neutral (reworking)","gnome.jpg"],
+    ["gnome",1,"neutral","gnome.jpg"],
     // ["grand peryton",3,"neutral (reworking)","grandperyton.jpg"]
 ]
 var heroes = [
@@ -99,10 +98,10 @@ var heroes = [
     // ["brinn","rampart","druid",[["pathfinding","basic"],["diplomacy","basic"]],""],
     // ["krystin","rampart","druid",[["wisdom","basic"],["airmagic","basic"]],""],
     // ["suzzane","rampart","druid",[["wisdom","basic"],["pathfinding","basic"]],"Magic is not the most popular subject among centaurs. Even fewer are the young people with aptitude for the thing. Suzzane is a young centaur who frightens many leaders with her tricks and knowledge."],
-    // ["mogh","ruins","hermit",[["earthmagic","expert"],["intelligence","basic"]],""],
-    // ["horae","ruins","hermit",[["earthmagic","basic"],["ballistics","basic"]],"Horae is a fanatic druid who does not believe in unnatural buildings. If we come from the land, there is no reason to create barriers between us."],
-    // ["mabon","ruins","hermit",[["wisdom","basic"],["luck","basic"]],"A gardener proud of his seedlings, the spreading of a decelerated life and peaceful coexistence. Probably influenced by his supernatural luck that guarantees surprises in his days and blossoming of his plants"],
-    // ["huldra","ruins","hermit",[["mysticism","basic"],["sorcery","basic"]],"A nature spirit of great beauty, who hypnotizes men and seduces them into the depths of the forest."],
+    ["mogh","ruins","hermit",[["earthmagic","expert"],["intelligence","basic"]],""],
+    ["horae","ruins","hermit",[["earthmagic","basic"],["ballistics","basic"]],"Horae is a fanatic druid who does not believe in unnatural buildings. If we come from the land, there is no reason to create barriers between us."],
+    ["mabon","ruins","hermit",[["wisdom","basic"],["luck","basic"]],"A gardener proud of his seedlings, the spreading of a decelerated life and peaceful coexistence. Probably influenced by his supernatural luck that guarantees surprises in his days and blossoming of his plants"],
+    ["huldra","ruins","hermit",[["mysticism","basic"],["sorcery","basic"]],"A nature spirit of great beauty, who hypnotizes men and seduces them into the depths of the forest."],
     ["balor","ruins","hunter",[["pathfinding","advanced"]],"A giant lumberjack hiding in his cabin at the foot of the great mountain. Balor only watches the travelers, but doesn't want become friendly with anyone."],
     // ["tuuk","stronghold","barbarian",[["luck","basic"],["pathfinding","basic"]],""],
     // ["bomoh","ruins","hermit",[["wisdom","basic"],["armorer","basic"]],""],
@@ -114,7 +113,7 @@ var heroes = [
     // ["duqk","cove","navigator",[["navigation","basic"],["luck","basic"]],""],
     // ["hron","tower","alchemist",[["armorer","basic"],["resistance","basic"]],"Built to be an obedient and unwilling guardian for eternity, it didn't take many generations for Hron to realize that those who swore obedience were no longer around to claim loyalty and so could gather his brothers to build their own destiny."],
     // ["kuna","stronghold","barbarian",[["scouting","basic"],["pathfinding","basic"]],"Kuna has never succeeded in his attempts to incorporate into the chaotic army of his tribe, but on the front lines there is no more elusive scout."],
-    // ["myra","ruins","wizard",[["firstaid","advanced"]],"Myra learned from her mother the efficiency of plants to feed her siblings, heal the wounds and even eliminate those who threaten you. Today, she knows how to do it, and she did it more than once."],
+    ["myra","ruins","wizard",[["firstaid","advanced"]],"Myra learned from her mother the efficiency of plants to feed her siblings, heal the wounds and even eliminate those who threaten you. Today, she knows how to do it, and she did it more than once."],
     // ["philip","castle","knight",[["leadership","basic"],["navigation","basic"]],"Philip spent many years of his military life preparing for the chance to free the seas of all piracy. That opportunity came in the form of a command position and a crew that shares their will."],
     // ["tris","rampart","rangers",[["archery","basic"],["scouting","basic"]],""],
     // ["medea","dungeon","warlock",[["wisdom","basic"],["eagleeye","advanced"]],""],
