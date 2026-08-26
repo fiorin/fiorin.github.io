@@ -1,0 +1,9 @@
+{
+  "name": "fiorin-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {"dev": "vite", "build": "vite build", "build:static": "npm run build && node scripts/copy-static.mjs", "preview": "vite preview", "check:a11y": "node scripts/check-accessibility.mjs"},
+  "dependencies": {"react": "latest", "react-dom": "latest"},
+  "devDependencies": {"@types/react": "latest", "@types/react-dom": "latest", "@vitejs/plugin-react": "latest", "typescript": "latest", "vite": "latest"}
+}

@@ -1,0 +1,5 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^fior.in$ [NC]
+RewriteRule ^(.*)$ http://fior.in/$1 [L,R=301]
