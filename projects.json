@@ -1,5 +1,5 @@
 [
-  {"year":"2025","color":"colorBlue","title":"Abominapp","description":"Zombicide abominations randomizer.","tags":["NextJs","HeroUI"],"href":"https://abominapp.vercel.app/","icon":"external","external":true},
+  {"cover": "cover-abominapp.png","year":"2025","color":"colorBlue","title":"Abominapp","description":"Zombicide abominations randomizer.","tags":["NextJs","HeroUI"],"href":"https://abominapp.vercel.app/","icon":"external","external":true},
   {"year":"2020","color":"colorOrange","title":"3d models","description":"Some 3d characters models made for personal use or modding projects.","tags":["Blender"],"href":"https://www.artstation.com/fiorin","icon":"external","external":true},
   {"year":"2018","color":"colorRed","title":"VCMI","description":"Little contribuition allowing unique custom sprites for heroes in battle for the VCMI plataform, a rewrite from the original Heroes of Might and Magic III.","tags":["C++"],"href":"https://github.com/fiorin/vcmi","icon":"external","external":true},
   {"year":"2018","color":"colorYellow","title":"UTFPR","description":"Material used at UTFPR and Integrado to teach Algorithms, Database and Programming Languages classes.","tags":["Python","Java","C","SQL","CSS","HTML"],"href":"https://drive.google.com/drive/folders/12jfbklSXpU0ER53bB6LRWWCUbJnYQIdU?usp=sharing","icon":"external","external":true},
