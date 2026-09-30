@@ -8,7 +8,7 @@ html{scroll-behavior:smooth;}
 
 body{margin:0;background: #111 url(img/bg.png) center top;font-family: Calibri, 'Trebuchet MS', sans-serif;line-height:1.5;}
 h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2;}
-a{text-decoration:none;}
+a{text-decoration:none;color:#ff9900}
 img{vertical-align:middle;border-style:none;}
 table{border-collapse:collapse;}
 ul{margin-top:0;margin-bottom:1rem;}
@@ -18,9 +18,14 @@ p{margin-top:0;}
 #page{width:1000px;max-width:100%;background: #111;}
 .bgHeaderBottom{background: url(img/bg-header-bottom.png) center bottom repeat-x;}
 header{position:absolute;top:20px;left:20px;}
-header .logo{}
+@media(max-width:600px){
+    header .logo{    width: 31px;
+    height: 32px;}    
+    header .logo img{width: 100%;
+    height: 100%;}    
+}
 
-#menu{position:fixed;left:0;top:30%;text-shadow:0 1px 2px #000;z-index:100;}
+#menu{position:fixed;left:0;top:25%;text-shadow:0 1px 2px #000;z-index:100;}
 #menu .menuTitle{text-transform: uppercase;color:#555;font-size:11px;padding-left:10px;margin-bottom:10px;}
 #menuList{list-style: none;padding:0;}
 #menuList .menuItem{margin-bottom:10px;font-size:14px;}
@@ -44,10 +49,10 @@ header .logo{}
 
 #characterSlider{width:400px;max-width:100%;}
 .sliderTitle{font-size:40px;color:#fff;height:60px;line-height: 60px;}
-.sliderContent{width:400px;max-width:100%;}
+.sliderContent{width:400px;max-width:100%;text-align:center}
 .sliderContent img{max-width:100%;}
 
-#contact{text-shadow:0 1px 2px #000;padding:30px 0;}
+#contact{text-shadow:0 1px 2px #000;padding:26px 0;border-top:1px solid #222;}
 .sectionTitle{font-size:20px;color: #fff;margin-bottom:20px;padding:0 20px;}
 @media(max-width:640px){
     .sectionTitle{font-size:16px;}
@@ -55,7 +60,7 @@ header .logo{}
 .contactLinks{}
 #contactList{}
 .contactItem{display:inline-block;margin:0 10px;margin-bottom:10px;}
-.contactItem a{display:block;padding:5px 10px;background: #333;border-bottom:2px solid #000;color:#fff;}
+.contactItem a{display:block;padding:5px 10px;background: #333;border-bottom:1px solid #000;color:#fff;}
 .contactItem a:hover{background: #444;}
 
 #abilities{padding:40px 0 20px;}
@@ -67,7 +72,7 @@ header .logo{}
 .abilityPreviewContent{width:230px;max-width:100%;border:1px solid #000;background:#444;padding:2px;}
 .abilityPreviewContent *{cursor: help;}
 .abilityImage{background:#161616;display:block;font-size:12px;text-indent:-9999px;width:100%;height:auto;aspect-ratio:4 / 3;object-fit:fill;}
-.abilityLeft, .abilityRight{padding:50px 0 45px 0;margin-bottom:20px;border-bottom:2px solid #040404;box-shadow:0 2px 4px #0a0a0a;border-top:1px solid #0a0a0a;}
+.abilityLeft, .abilityRight{padding:50px 0 45px 0;margin-bottom:20px;border-bottom:1px solid #040404;box-shadow:0 2px 4px #0a0a0a;border-top:1px solid #0a0a0a;}
 .abilityContainer{width:640px;max-width:100%;margin: 0 auto;padding:0 20px}
 .abilityLeft{background: #2a2929;}
 .abilityRight{background: #171717;}
@@ -79,23 +84,33 @@ header .logo{}
     .abilityTitle{text-align: center;}
     .abilitySubtitle{text-align: center;}
     .abilityLeft .abilityContent, .abilityRight .abilityContent{float:none;width:100%;}
-    .abilityLeft .abilityPreview, .abilityRight .abilityPreview{float:none;padding-left:0;width:100%;}
-    .abilityPreview{max-width:230px;margin:0 auto;margin-top:20px;}
+    .abilityLeft .abilityPreview, .abilityRight .abilityPreview{float:none;padding-left:0;width:100%;padding-right:0;}
+    .abilityPreview{max-width:80%;margin:0 auto;margin-top:20px;}
+    
+.abilityPreviewContent{width:100%;max-width:100%;}
+.abilityImage{width:100%;max-width:100%;}
 }
 .abilitieTags .projectTag,.pageTags{color:#fff;}
 
 #projects{}
 #projects a:hover{text-decoration: none;}
-#projectsList{width:600px;max-width:100%;margin:0 auto;padding-left:40px;}
+#projectsList{width:600px;max-width:100%;margin:0 auto;padding-left:40px;list-style: none;}
 .projectListItem{margin-bottom:10px;border-bottom:1px solid #222;padding-bottom:10px;}
 .projectTitle{font-size:16px;color:#fff;margin-bottom:10px;}
-.projectTitle .projectYear{font-style: italic;font-weight: bold;font-size:14px;}
-#projects a{display:block;padding:5px 10px;border:1px transparent solid;}
+.projectCoverCont{flex: 0 0 75px;
+  width: 75px;margin-right:10px;}
+.projectContentCont{flex: 1;
+  min-width: 0;}
+.projectCover{border: 1px solid #777;padding:1px;height:75px;box-shadow:0 2px 4px #0a0a0a;width: 100%;
+  height: auto;
+  display: block;}
+.projectTitle .projectYear{font-style: italic;font-weight: bold;font-size:14px;margin-right:10px;}
+#projects a{padding:10px;border:1px transparent solid;}
 #projects a:hover{border:1px dashed #777;}
 .projectDescription{margin-bottom:10px;color:#fff;font-size:14px;color:#ccc}
 .projectTags{font-size:12px;color:#777;}
 .projectTag{margin-right:5px;}
-.projectLink{text-decoration:none;}
+.projectLink{text-decoration:none;display: flex;}
 .projectLink i{font-size:12px;}
 .projectIcon,.menuIcon{display:inline-block;width:12px;height:12px;vertical-align:-1px;}
 .menuIcon{margin-right:2px;}
