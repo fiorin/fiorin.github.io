@@ -9,6 +9,9 @@ Fiorin works across software development, front-end interfaces, visual editing, 
 ## Links
 
 - Portfolio: https://fior.in/
+- Resume (human-readable): https://fior.in/resume
+- Instructions for agents: https://fior.in/AGENTS.md
+- Resume (JSON Resume): https://fior.in/resume.json
 - Projects data: https://fior.in/projects.json
 - Projects schema: https://fior.in/content/projects.schema.json
 - GitHub: https://github.com/fiorin

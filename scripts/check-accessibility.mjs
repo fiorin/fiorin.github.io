@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 
-const files = ["src/App.tsx", "src/components/ProjectPage.tsx", "src/pages/ContentPage.tsx", "src/pages/NotFoundPage.tsx"];
+const files = ["src/App.tsx", "src/components/ProjectList.tsx", "src/components/ProjectPage.tsx", "src/pages/ContentPage.tsx", "src/pages/NotFoundPage.tsx", "src/pages/ResumePage.tsx"];
 const sources = files.map((file) => [file, readFileSync(file, "utf8")]);
 const errors = [];
 

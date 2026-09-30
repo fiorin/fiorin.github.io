@@ -1,4 +1,5 @@
 export type Project = {
+  cover: string;
   year: string;
   color: string;
   title: string;
@@ -16,7 +17,7 @@ const isStringArray = (value: unknown): value is string[] => Array.isArray(value
 export function validateProjects(value: unknown): Project[] {
   if (!Array.isArray(value)) throw new Error("projects.json must contain an array");
   for (const item of value) {
-    if (!isRecord(item) || typeof item.year !== "string" || typeof item.title !== "string" || typeof item.description !== "string" || !isStringArray(item.tags) || typeof item.href !== "string" || !["external", "link", "search"].includes(String(item.icon))) {
+    if (!isRecord(item) || typeof item.cover !== "string" || typeof item.year !== "string" || typeof item.title !== "string" || typeof item.description !== "string" || !isStringArray(item.tags) || typeof item.href !== "string" || !["external", "link", "search"].includes(String(item.icon))) {
       throw new Error(`Invalid project entry: ${JSON.stringify(item)}`);
     }
   }

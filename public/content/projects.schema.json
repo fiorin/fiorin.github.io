@@ -2,11 +2,13 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://fior.in/content/projects.schema.json",
   "title": "Fior.in project list",
+  "description": "Personal and side projects. Employment history lives in resume.json.",
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["year", "color", "title", "description", "tags", "href", "icon"],
+    "required": ["cover", "year", "color", "title", "description", "tags", "href", "icon"],
     "properties": {
+      "cover": {"type": "string", "description": "Cover image file name, relative to /img/"},
       "year": {"type": "string"},
       "color": {"type": "string"},
       "title": {"type": "string"},
