@@ -96,7 +96,7 @@ header{position:absolute;top:20px;left:20px;}
 #projects a:hover{text-decoration: none;}
 #projectsList{width:600px;max-width:100%;margin:0 auto;padding-left:40px;list-style: none;}
 .projectListItem{margin-bottom:10px;border-bottom:1px solid #222;padding-bottom:10px;}
-.projectTitle{font-size:16px;color:#fff;margin-bottom:10px;margin-top:11px;}
+.projectTitle{font-size:16px;color:#fff;margin-bottom:10px;margin-top:0;}
 .projectCoverCont{flex: 0 0 75px;
   width: 75px;margin-right:10px;}
 .projectContentCont{flex: 1;
@@ -104,7 +104,7 @@ header{position:absolute;top:20px;left:20px;}
 .projectCover{border: 1px solid #777;padding:1px;height:75px;box-shadow:0 2px 4px #0a0a0a;width: 100%;
   height: auto;
   display: block;}
-.projectTitle .projectYear{font-style: italic;font-weight: bold;font-size:14px;margin-right:10px;}
+.projectTitle .projectYear{font-style: italic;font-weight: bold;font-size:14px;margin-right:5px;}
 #projects a{padding:10px;border:1px transparent solid;}
 #projects a:hover{border:1px dashed #777;}
 .projectDescription{margin-bottom:10px;color:#fff;font-size:14px;color:#ccc}
@@ -198,3 +198,8 @@ table.table-responsive{overflow-x: hidden;}
 .mt-5{margin-top:3rem;}
 .display-block{display:block;}
 .width-full{width:100%;}
+
+/* Fiorin Games Studio page: monochrome identity, same layout as home. */
+.studioTheme a{color:#fff;}
+.studioTheme a:hover{color:#ccc;}
+.studioTheme .projectYear{color:#ccc;}

@@ -45,7 +45,7 @@ function App() {
         <section id="characterSlider" className="margin-auto" aria-label="Fiorin can code">
           <div className="eachSlider">
             <div className="sliderContent position-relative">
-              <img src="/img/character.png" alt="Code skills: Typescript, Javascript, NodeJS, PHP, Python, NextJS, NestJS and Rust" title="I can code!" width="200" height="400" />{heroCaptions.map(([label, style]) => <div className="floatCaption" style={inlineStyle(style)} key={label}><span>{label}</span></div>)}
+              <img src="/img/character.png" alt="Code skills: Typescript, Javascript, NodeJS, PHP, Python, NextJS, NestJS and Rust" title="I can code!" height="400" />{heroCaptions.map(([label, style]) => <div className="floatCaption" style={inlineStyle(style)} key={label}><span>{label}</span></div>)}
               </div>
               </div>
               </section>

@@ -1,9 +1,10 @@
 import Icon from "./Icon";
 import projects from "../data/projects";
+import type { Project } from "../data/schema";
 
-export default function ProjectList() {
+export default function ProjectList({ items }: { items?: Project[] }) {
   return <ul id="projectsList">
-    {projects.map((project) => <li className="projectListItem" key={project.title}>
+    {(items ?? projects).map((project) => <li className="projectListItem" key={project.title}>
       <a href={project.href} className="projectLink" target={project.external ? "_blank" : undefined} rel={project.external ? "noreferrer" : undefined}>
         <div className="projectCoverCont">
           <img className="projectCover" src={`/img/${project.cover}`} alt="" width={75} height={75} loading="lazy" />

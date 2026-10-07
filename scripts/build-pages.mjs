@@ -7,7 +7,7 @@ const dist = resolve(projectRoot, "dist");
 
 // Static routes to prerender. GitHub Pages has no server-side rewrite, so each
 // route needs its own index.html to answer with 200 instead of 404.
-const routes = ["/resume"];
+const routes = ["/resume", "/games"];
 
 const projectKeys = ["cover", "year", "color", "title", "description", "tags", "href", "icon", "external"];
 
