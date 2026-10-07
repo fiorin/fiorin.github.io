@@ -1,9 +1,26 @@
 [
   {
+    "cover": "cover-studio.png",
+    "year": "2026",
+    "color": "colorOrange",
+    "title": "Fiorin Games Studio",
+    "description": "Independent board game studio creating original tabletop games through experimental mechanics, rapid prototyping, and hands-on production.",
+    "tags": [
+      "Boardgame",
+      "Python",
+      "Rust",
+      "Blender",
+      "AI"
+    ],
+    "href": "/games",
+    "icon": "link",
+    "external": false
+  },
+  {
     "cover": "cover-restyle.png",
     "year": "2026",
     "color": "colorYellow",
-    "title": "Restyle - WIP",
+    "title": "Restyle",
     "description": "Image style converter using Google Gemini API and vision models for custom art generation.",
     "tags": [
       "Javascript, GeminiAPI, AI"
@@ -15,9 +32,9 @@
   {
     "cover": "cover-ourstl.png",
     "year": "2026",
-    "color": "colorRosa",
+    "color": "colorBlue",
     "title": "OurStl",
-    "description": "Web scraper and STL ripper tool for extracting 3D printable meshes.",
+    "description": "A STL extractor and mesh downloader for web-based 3D generation tools.",
     "tags": [
       "Node.js"
     ],
@@ -28,7 +45,7 @@
   {
     "cover": "cover-abominapp.png",
     "year": "2025",
-    "color": "colorBlue",
+    "color": "colorGreen",
     "title": "Abominapp",
     "description": "Abomination randomizer app for Zombicide tabletop sessions.",
     "tags": [
@@ -42,28 +59,15 @@
   {
     "cover": "cover-ruins.png",
     "year": "2023",
-    "color": "colorPurple",
-    "title": "TOK - Ruins Town",
-    "description": "Custom faction for Heroes of Might and Magic III. Designed and implemented new creature graphics, original lore, and engine balance.",
+    "color": "colorOrange",
+    "title": "Ruins",
+    "description": "A custom faction mod for Heroes of Might and Magic III. Designed from scratch, encompassing original 3D creature art, custom lore, asset integration, and game balance tuning.",
     "tags": [
       "Javascript",
       "Photoshop",
       "Game Design"
     ],
     "href": "http://heroescommunity.com/viewthread.php3?TID=44951",
-    "icon": "external",
-    "external": true
-  },
-  {
-    "cover": "cover-3d.png",
-    "year": "2020",
-    "color": "colorOrange",
-    "title": "3d models",
-    "description": "Custom 3D character models and assets for personal builds and modding.",
-    "tags": [
-      "Blender"
-    ],
-    "href": "https://www.artstation.com/fiorin",
     "icon": "external",
     "external": true
   },
@@ -84,8 +88,8 @@
     "cover": "cover-utf.png",
     "year": "2018",
     "color": "colorYellow",
-    "title": "UTFPR",
-    "description": "Open curriculum, exercises, and teaching material created for university algorithms and database classes.",
+    "title": "Coding Lab",
+    "description": "Open educational materials, including curricula, exercises, and course resources, developed for undergraduate Algorithms and Database courses at UTFPR.",
     "tags": [
       "Python",
       "Java",
@@ -119,7 +123,7 @@
     "year": "2016",
     "color": "colorRosa",
     "title": "Don't Starve",
-    "description": "Custom playable character published on Steam Workshop for Don't Starve Together.",
+    "description": "A custom playable character for Don't Starve Together, created as an exploration of character design, gameplay mechanics, scripting, and mod development.",
     "tags": [
       "Lua"
     ],
@@ -132,7 +136,7 @@
     "year": "2016",
     "color": "colorBrown",
     "title": "Brawl",
-    "description": "2D fighting game prototype built in Phaser to explore game loop architectures.",
+    "description": "Experimental 2D fighting game built with Phaser, focused on exploring game loop architecture and the underlying systems of real-time gameplay.",
     "tags": [
       "Phaser",
       "Javascript",
@@ -156,11 +160,24 @@
     "external": true
   },
   {
+    "cover": "cover-bomberman.png",
+    "year": "2011",
+    "color": "colorPurple",
+    "title": "Bomberman",
+    "description": "Bomberman-inspired 2D game built from scratch with vanilla JavaScript, featuring grid-based movement, bombs, explosions, collisions, and real-time gameplay.",
+    "tags": [
+      "Javascript"
+    ],
+    "href": "https://github.com/fiorin/bomberman2010.js",
+    "icon": "external",
+    "external": true
+  },
+  {
     "cover": "cover-quarto.png",
     "year": "2009",
     "color": "colorOrange",
     "title": "Quarto Universitário",
-    "description": "Custom WordPress theme architecture shipped for university media platforms.",
+    "description": "Custom WordPress theme architecture developed and deployed for university media platforms, with a focus on reusable components, content management, and scalable publishing workflows.",
     "tags": [
       "Html",
       "Css",
