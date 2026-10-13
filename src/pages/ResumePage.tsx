@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import ContentPage from "./ContentPage";
 import resume from "../data/resume.json";
+import { resumeMeta } from "../data/resumeMeta";
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -63,9 +64,7 @@ function BasicsBlock({ basics }: { basics: Basics }) {
 
 export default function ResumePage() {
   return <ContentPage
-    title={`${resume.basics.name} — ${resume.basics.label}`}
-    description={`${resume.basics.label} in ${resume.basics.location.city}, Brazil. ${resume.basics.summary.slice(0, 150)}`}
-    canonical="https://fior.in/resume"
+    {...resumeMeta}
     navItems={[{ label: "Home", href: "/", icon: "back" }, { label: "Machine-readable", href: "/resume.json" }, { label: "Agent instructions", href: "/AGENTS.md" }]}
   >
     <main className="pageContent">

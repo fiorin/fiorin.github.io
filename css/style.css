@@ -1,4 +1,4 @@
-@font-face {font-family: "Ink Free"; src: url("fonts/0801c08e5412f54e4b4e9ad146d83a12.eot"); src: url("fonts/0801c08e5412f54e4b4e9ad146d83a12.eot?#iefix") format("embedded-opentype"), url("fonts/0801c08e5412f54e4b4e9ad146d83a12.woff2") format("woff2"), url("fonts/0801c08e5412f54e4b4e9ad146d83a12.woff") format("woff"), url("fonts/0801c08e5412f54e4b4e9ad146d83a12.ttf") format("truetype"); } 
+@font-face {font-family: "Ink Free"; src: url("/fonts/ink-free.woff2") format("woff2"); font-display: swap;} 
 
 *, *:before, *:after {box-sizing:border-box;}
 html{scroll-behavior:smooth;}

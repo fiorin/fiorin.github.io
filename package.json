@@ -3,7 +3,25 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "scripts": {"dev": "vite", "build": "vite build && node scripts/build-pages.mjs", "build:static": "npm run build && node scripts/copy-static.mjs", "preview": "vite preview", "typecheck": "tsc --noEmit", "check:a11y": "node scripts/check-accessibility.mjs"},
-  "dependencies": {"react": "latest", "react-dom": "latest"},
-  "devDependencies": {"@types/react": "latest", "@types/react-dom": "latest", "@vitejs/plugin-react": "latest", "typescript": "latest", "vite": "latest"}
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/build-pages.mjs",
+    "build:static": "npm run build && node scripts/copy-static.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "check:a11y": "node scripts/check-accessibility.mjs",
+    "optimize:images": "node scripts/optimize-images.mjs"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "preact": "^11.0.1",
+    "preact-render-to-string": "^6.8.0"
+  }
 }
