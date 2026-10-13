@@ -46,7 +46,9 @@ async function publish(source, target) {
   } catch {
     throw new Error(`${source} is not valid JSON`);
   }
-  if (source.endsWith("projects.json")) validateProjects(data);
+  if (source.endsWith("projects.json") || source.endsWith("games.json")) {
+    validateProjects(data, target);
+  }
   await mkdir(dirname(resolve(dist, target)), { recursive: true });
   await writeFile(resolve(dist, target), `${JSON.stringify(data, null, 2)}\n`, "utf8");
   console.log(`Published ${target}`);
@@ -55,7 +57,21 @@ async function publish(source, target) {
 
 const projects = await publish("src/data/projects.json", "projects.json");
 const resume = await publish("src/data/resume.json", "resume.json");
-validateProjects(JSON.parse(await readFile(resolve(projectRoot, "src/data/games.json"), "utf8")), "games.json");
+const games = await publish("src/data/games.json", "games.json");
+
+const absoluteUrl = (href) => href === "#" ? "https://fior.in/games" : href.startsWith("/") ? `https://fior.in${href}` : href;
+const llmsItem = (item) => {
+  const destination = item.href === "#" ? "" : ` — ${absoluteUrl(item.href)}`;
+  return `- ${item.title} (${item.year}): ${item.description}${destination}`;
+};
+const llmsTemplate = await readFile(resolve(projectRoot, "public/llms.txt"), "utf8");
+const llms = llmsTemplate
+  .replace("<!-- llms:games -->", games.map(llmsItem).join("\n"))
+  .replace("<!-- llms:projects -->", projects.map(llmsItem).join("\n"))
+  .replace("<!-- llms:updated -->", `_Last updated: ${new Date().toISOString().slice(0, 10)}._`);
+if (llms.includes("<!-- llms:")) throw new Error("public/llms.txt has an unfilled generation marker");
+await writeFile(resolve(dist, "llms.txt"), llms, "utf8");
+console.log("Generated llms.txt from projects.json and games.json");
 
 const escapeHtml = (value) => value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
@@ -63,7 +79,6 @@ const escapeHtml = (value) => value.replace(/&/g, "&amp;").replace(/</g, "&lt;")
 // not drift away from projects.json/resume.json again.
 function structuredData() {
   const basics = resume.basics;
-  const absolute = (href) => (href === "#" ? "https://fior.in/games" : href.startsWith("/") ? `https://fior.in${href}` : href);
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -85,7 +100,7 @@ function structuredData() {
         itemListElement: projects.map((project, index) => ({
           "@type": "ListItem",
           position: index + 1,
-          item: { "@type": "CreativeWork", name: project.title, description: project.description, url: absolute(project.href), dateCreated: project.year }
+          item: { "@type": "CreativeWork", name: project.title, description: project.description, url: absoluteUrl(project.href), dateCreated: project.year }
         }))
       }
     ]

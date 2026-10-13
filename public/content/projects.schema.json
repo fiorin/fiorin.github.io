@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://fior.in/content/projects.schema.json",
-  "title": "Fior.in project list",
-  "description": "Personal and side projects. Employment history lives in resume.json.",
+  "title": "Fior.in projects and studio games",
+  "description": "Schema shared by projects.json and games.json. Employment history lives in resume.json.",
   "type": "array",
   "items": {
     "type": "object",

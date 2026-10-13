@@ -12,10 +12,12 @@ This file is the entry point for AI assistants. It describes what to read, how t
 | Resume (human-readable) | https://fior.in/resume |
 | Resume (JSON Resume) | https://fior.in/resume.json |
 | Projects | https://fior.in/projects.json |
+| Fiorin Games Studio | https://fior.in/games |
+| Studio projects | https://fior.in/games.json |
 | Projects schema | https://fior.in/content/projects.schema.json |
 | Portfolio | https://fior.in/ |
 
-`/resume` is the human-readable rendering of the same data; no PDF version is published. `resume.json` follows the [JSON Resume](https://jsonresume.org/) schema. `projects.json` is the personal/side-project catalogue and is deliberately not duplicated in `resume.json`.
+`/resume` is the human-readable rendering of the same data; no PDF version is published. `resume.json` follows the [JSON Resume](https://jsonresume.org/) schema. `projects.json` is the personal/side-project catalogue and is deliberately not duplicated in `resume.json`. `games.json` lists Fiorin Games Studio's board-game projects; it shares the schema at `/content/projects.schema.json` with `projects.json`.
 
 ## Evaluating fit
 
