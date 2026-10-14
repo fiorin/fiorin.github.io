@@ -10,9 +10,12 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "check:a11y": "node scripts/check-accessibility.mjs",
+    "test": "playwright test",
+    "test:report": "playwright show-report",
     "optimize:images": "node scripts/optimize-images.mjs"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@preact/preset-vite": "^2.10.6",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
