@@ -20,7 +20,7 @@ const responsive = {
 // Rendered small (<=300px) or used as a thumbnail: converting is enough.
 const convert = [
   "3dmodel.png", "ai.png", "back.png", "class.png", "edit.png", "front.png",
-  "gamedev.png", "git.png", "studio.png", "code.gif",
+  "gamedev.png", "git.png", "studio.png",
   "cover-abominapp.png", "cover-arcrevil.png", "cover-bomberman.png", "cover-brawl.png",
   "cover-dont-starve.png", "cover-generator.png", "cover-hash.png", "cover-ourstl.png",
   "cover-porteira.png", "cover-pto.png", "cover-quarto.png", "cover-restyle.png",
@@ -29,7 +29,12 @@ const convert = [
 
 // Linked directly as a work sample, not rendered in the layout: keep it big
 // enough to be readable but cap the width.
-const capped = { "quartouniversitario.jpg": { width: 900, quality: 72 } };
+const capped = { "quartouniversitario.jpg": { width: 800, quality: 70 } };
+
+// Animations: .abilityPreviewContent is 230px wide, so 240px keeps 1x at the
+// rendered size without shipping the source frames at full resolution. WebP
+// beats GIF here; a video encode would be smaller but needs ffmpeg.
+const animated = { "code.gif": { width: 240, quality: 65 } };
 
 // Superseded or linked by nothing.
 const remove = [
@@ -85,13 +90,32 @@ for (const [name, options] of Object.entries(capped)) {
   }
 }
 
+for (const [name, options] of Object.entries(animated)) {
+  const input = resolve(dir, name);
+  const info = await stat(input).catch(() => null);
+  if (!info) { console.log(`${name}: already converted, skipped`); continue; }
+  const target = `${name.replace(/\.\w+$/, "")}.webp`;
+  const buffer = await sharp(input, { animated: true })
+    .resize({ width: options.width, withoutEnlargement: true })
+    .webp({ quality: options.quality, effort: 6 })
+    .toBuffer();
+  if (buffer.length >= info.size) {
+    console.log(`${name}: kept original (webp ${kb(buffer.length)} vs ${kb(info.size)})`);
+    continue;
+  }
+  await writeFile(resolve(dir, target), buffer);
+  await remove_(input, name);
+  saved.before += info.size;
+  saved.after += buffer.length;
+  console.log(`${name} -> ${target} (${kb(info.size)} -> ${kb(buffer.length)})`);
+}
+
 for (const name of convert) {
   const input = resolve(dir, name);
   const info = await stat(input).catch(() => null);
   if (!info) { console.log(`${name}: already converted, skipped`); continue; }
   const target = `${name.replace(/\.\w+$/, "")}.webp`;
-  const animated = name.endsWith(".gif");
-  const buffer = await sharp(input, { animated }).webp({ quality: 82, effort: 6 }).toBuffer();
+  const buffer = await sharp(input).webp({ quality: 82, effort: 6 }).toBuffer();
   if (buffer.length >= info.size) {
     console.log(`${name}: kept original (webp ${kb(buffer.length)} vs ${kb(info.size)})`);
     continue;
