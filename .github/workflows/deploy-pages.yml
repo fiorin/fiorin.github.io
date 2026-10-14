@@ -37,8 +37,7 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Smoke tests
         run: npm run test
-      - name: Lighthouse budget (advisory)
-        continue-on-error: true
+      - name: Lighthouse budget
         uses: treosh/lighthouse-ci-action@v12
         with:
           configPath: ./lighthouserc.json
