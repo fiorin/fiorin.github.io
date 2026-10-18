@@ -1,0 +1,57 @@
+[
+  {
+    "cover": "cover-hash.webp",
+    "year": "2026",
+    "color": "colorYellow",
+    "title": "Project #",
+    "description": "A boardgame for 2-6 players. Still unrevealed",
+    "tags": [
+      "Boardgame",
+      "node.js",
+      "Rust",
+      "Python"
+    ],
+    "href": "#",
+    "icon": "external",
+    "external": true
+  },
+  {
+    "cover": "cover-simulator.webp",
+    "year": "2026",
+    "color": "colorRed",
+    "title": "Project #",
+    "description": "A boardgame game simulator for Project #",
+    "tags": [
+      "Node.js"
+    ],
+    "href": "#",
+    "icon": "external",
+    "external": true
+  },
+  {
+    "cover": "cover-generator.webp",
+    "year": "2026",
+    "color": "colorCyan",
+    "title": "Project # board generator",
+    "description": "A boardgame field generator for Project #",
+    "tags": [
+      "Rust"
+    ],
+    "href": "#",
+    "icon": "external",
+    "external": true
+  },
+  {
+    "cover": "cover-manager.webp",
+    "year": "2026",
+    "color": "colorCyan",
+    "title": "Project # character manager",
+    "description": "A boardgame character manager for Project #",
+    "tags": [
+      "Typescript"
+    ],
+    "href": "#",
+    "icon": "external",
+    "external": true
+  }
+]

@@ -1,0 +1,52 @@
+# Fior.in
+
+> Portfolio of Luciano Fiorin, a senior software engineer, designer, educator, and board-game creator.
+
+## About
+
+Fiorin works across TypeScript and JavaScript platforms, microfrontends, distributed systems on AWS, AI/LLM engineering, visual editing, 3D modeling, game development, and computer science education. Employment history is in the resume; side projects are listed separately.
+
+## Read
+
+- Portfolio: https://fior.in/
+- Resume (human-readable): https://fior.in/resume
+- Resume (JSON Resume): https://fior.in/resume.json
+- Projects (JSON): https://fior.in/projects.json
+- Fiorin Games Studio: https://fior.in/games
+- Studio projects (JSON): https://fior.in/games.json
+- Shared projects schema: https://fior.in/content/projects.schema.json
+- Instructions for agents: https://fior.in/AGENTS.md
+
+## Contact and profiles
+
+- Email: luciano@fior.in
+- GitHub: https://github.com/fiorin
+- LinkedIn: https://www.linkedin.com/in/fiorin
+- Twitter: https://twitter.com/fiorpontoin
+- Lattes: https://lattes.cnpq.br/7583684423712640
+
+## Fiorin Games Studio
+
+- Project # (2026): A boardgame for 2-6 players. Still unrevealed
+- Project # (2026): A boardgame game simulator for Project #
+- Project # board generator (2026): A boardgame field generator for Project #
+- Project # character manager (2026): A boardgame character manager for Project #
+
+## Projects
+
+- Fiorin Games Studio (2026): Independent board game studio creating original tabletop games through experimental mechanics, rapid prototyping, and hands-on production. — https://fior.in/games
+- arcRevil (2026): AI-powered architectural PR reviewer that detects design violations, dependency issues, and architectural regressions using static analysis and LLMs. — https://github.com/fiorin/arcRevil
+- Restyle (2026): Image style converter using Google Gemini API and vision models for custom art generation. — https://github.com/fiorin/restyle
+- OurStl (2026): A STL extractor and mesh downloader for web-based 3D generation tools. — https://github.com/fiorin/ourstl
+- Abominapp (2025): Abomination randomizer app for Zombicide tabletop sessions. — https://abominapp.vercel.app/
+- Ruins (2023): A custom faction mod for Heroes of Might and Magic III. Designed from scratch, encompassing original 3D creature art, custom lore, asset integration, and game balance tuning. — http://heroescommunity.com/viewthread.php3?TID=44951
+- VCMI (2018): Open-source C++ contribution enabling unique custom hero sprites in battle for the Heroes of Might and Magic III engine rewrite. — https://github.com/fiorin/vcmi
+- Coding Lab (2018): Open educational materials, including curricula, exercises, and course resources, developed for undergraduate Algorithms and Database courses at UTFPR. — https://drive.google.com/drive/folders/12jfbklSXpU0ER53bB6LRWWCUbJnYQIdU?usp=sharing
+- p0rte1ra (2017): Desktop livestock management system built with cross-platform web tech. — https://github.com/fiorin/p0rte1ra
+- Don't Starve (2016): A custom playable character for Don't Starve Together, created as an exploration of character design, gameplay mechanics, scripting, and mod development. — https://steamcommunity.com/id/sarna/myworkshopfiles/?appid=322330
+- Brawl (2016): Experimental 2D fighting game built with Phaser, focused on exploring game loop architecture and the underlying systems of real-time gameplay. — https://github.com/fiorin/brawl
+- Pto.css (2015): Lightweight utility-first CSS framework built as a Bootstrap alternative. — https://github.com/fiorin/ptocss
+- Bomberman (2011): Bomberman-inspired 2D game built from scratch with vanilla JavaScript, featuring grid-based movement, bombs, explosions, collisions, and real-time gameplay. — https://github.com/fiorin/bomberman2010.js
+- Quarto Universitário (2009): Custom WordPress theme architecture developed and deployed for university media platforms, with a focus on reusable components, content management, and scalable publishing workflows. — https://fior.in/img/quartouniversitario.webp
+
+_Last updated: 2026-10-18._
