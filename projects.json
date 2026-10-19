@@ -1,20 +1,20 @@
 [
   {
-    "cover": "cover-studio.webp",
+    "cover": "cover-archeologist.webp",
     "year": "2026",
-    "color": "colorOrange",
-    "title": "Fiorin Games Studio",
-    "description": "Independent board game studio creating original tabletop games through experimental mechanics, rapid prototyping, and hands-on production.",
+    "color": "colorBlue",
+    "title": "Codebase Archaeologist",
+    "description": "A local-first desktop tool that maps software architecture, detects dependency cycles and complexity hotspots, and analyzes change impact using static analysis and Git history.",
     "tags": [
-      "Boardgame",
-      "Python",
       "Rust",
-      "Blender",
-      "AI"
+      "TypeScript",
+      "Tauri",
+      "Static Analysis",
+      "Developer Tools"
     ],
-    "href": "/games",
-    "icon": "link",
-    "external": false
+    "href": "https://github.com/fiorin/codebase-archeologist",
+    "icon": "external",
+    "external": true
   },
   {
     "cover": "cover-arcrevil.webp",
@@ -24,13 +24,29 @@
     "description": "AI-powered architectural PR reviewer that detects design violations, dependency issues, and architectural regressions using static analysis and LLMs.",
     "tags": [
       "AI",
+      "Static Analysis",
       "LLMs",
       "RAG",
-      "Node.js"
+      "Developer Tools"
     ],
     "href": "https://github.com/fiorin/arcRevil",
     "icon": "external",
     "external": true
+  },
+  {
+    "cover": "cover-studio.webp",
+    "year": "2026",
+    "color": "colorOrange",
+    "title": "Fiorin Games Studio",
+    "description": "Independent tabletop game studio developing original games through mechanical design, simulation, rapid prototyping, and custom physical components.",
+    "tags": [
+      "Game Design",
+      "Simulation",
+      "3D Printing"
+    ],
+    "href": "/games",
+    "icon": "link",
+    "external": false
   },
   {
     "cover": "cover-restyle.webp",
@@ -39,7 +55,7 @@
     "title": "Restyle",
     "description": "Image style converter using Google Gemini API and vision models for custom art generation.",
     "tags": [
-      "Javascript",
+      "JavaScript",
       "Gemini API",
       "AI"
     ],
@@ -54,7 +70,8 @@
     "title": "OurStl",
     "description": "A STL extractor and mesh downloader for web-based 3D generation tools.",
     "tags": [
-      "Node.js"
+      "Node.js",
+      "3D Assets"
     ],
     "href": "https://github.com/fiorin/ourstl",
     "icon": "external",
@@ -68,7 +85,8 @@
     "description": "Abomination randomizer app for Zombicide tabletop sessions.",
     "tags": [
       "Next.js",
-      "HeroUI"
+      "React",
+      "Tabletop Games"
     ],
     "href": "https://abominapp.vercel.app/",
     "icon": "external",
@@ -81,8 +99,8 @@
     "title": "Ruins",
     "description": "A custom faction mod for Heroes of Might and Magic III. Designed from scratch, encompassing original 3D creature art, custom lore, asset integration, and game balance tuning.",
     "tags": [
-      "Javascript",
-      "Photoshop",
+      "Game Modding",
+      "3D Assets",
       "Game Design"
     ],
     "href": "http://heroescommunity.com/viewthread.php3?TID=44951",
@@ -96,7 +114,9 @@
     "title": "VCMI",
     "description": "Open-source C++ contribution enabling unique custom hero sprites in battle for the Heroes of Might and Magic III engine rewrite.",
     "tags": [
-      "C++"
+      "C++",
+      "Open Source",
+      "Game Engine"
     ],
     "href": "https://github.com/fiorin/vcmi",
     "icon": "external",
@@ -109,12 +129,10 @@
     "title": "Coding Lab",
     "description": "Open educational materials, including curricula, exercises, and course resources, developed for undergraduate Algorithms and Database courses at UTFPR.",
     "tags": [
+      "Education",
       "Python",
       "Java",
-      "C",
-      "SQL",
-      "CSS",
-      "HTML"
+      "SQL"
     ],
     "href": "https://drive.google.com/drive/folders/12jfbklSXpU0ER53bB6LRWWCUbJnYQIdU?usp=sharing",
     "icon": "external",
@@ -127,7 +145,7 @@
     "title": "p0rte1ra",
     "description": "Desktop livestock management system built with cross-platform web tech.",
     "tags": [
-      "Javascript",
+      "JavaScript",
       "Electron",
       "Node.js",
       "MongoDB"
@@ -140,10 +158,11 @@
     "cover": "cover-dont-starve.webp",
     "year": "2016",
     "color": "colorRosa",
-    "title": "Don't Starve",
+    "title": "Don't Starve Together",
     "description": "A custom playable character for Don't Starve Together, created as an exploration of character design, gameplay mechanics, scripting, and mod development.",
     "tags": [
-      "Lua"
+      "Lua",
+      "Game Modding"
     ],
     "href": "https://steamcommunity.com/id/sarna/myworkshopfiles/?appid=322330",
     "icon": "external",
@@ -157,8 +176,8 @@
     "description": "Experimental 2D fighting game built with Phaser, focused on exploring game loop architecture and the underlying systems of real-time gameplay.",
     "tags": [
       "Phaser",
-      "Javascript",
-      "Photoshop"
+      "JavaScript",
+      "Game Design"
     ],
     "href": "https://github.com/fiorin/brawl",
     "icon": "external",
@@ -171,7 +190,8 @@
     "title": "Pto.css",
     "description": "Lightweight utility-first CSS framework built as a Bootstrap alternative.",
     "tags": [
-      "Css"
+      "CSS",
+      "Open Source"
     ],
     "href": "https://github.com/fiorin/ptocss",
     "icon": "external",
@@ -184,7 +204,8 @@
     "title": "Bomberman",
     "description": "Bomberman-inspired 2D game built from scratch with vanilla JavaScript, featuring grid-based movement, bombs, explosions, collisions, and real-time gameplay.",
     "tags": [
-      "Javascript"
+      "JavaScript",
+      "Game Development"
     ],
     "href": "https://github.com/fiorin/bomberman2010.js",
     "icon": "external",
@@ -197,10 +218,10 @@
     "title": "Quarto Universitário",
     "description": "Custom WordPress theme architecture developed and deployed for university media platforms, with a focus on reusable components, content management, and scalable publishing workflows.",
     "tags": [
-      "Html",
-      "Css",
+      "WordPress",
       "Php",
-      "Javascript"
+      "JavaScript",
+      "CSS"
     ],
     "href": "/img/quartouniversitario.webp",
     "icon": "search",

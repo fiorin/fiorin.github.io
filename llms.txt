@@ -27,15 +27,17 @@ Fiorin works across TypeScript and JavaScript platforms, microfrontends, distrib
 
 ## Fiorin Games Studio
 
-- Project # (2026): A boardgame for 2-6 players. Still unrevealed
-- Project # (2026): A boardgame game simulator for Project #
-- Project # board generator (2026): A boardgame field generator for Project #
-- Project # character manager (2026): A boardgame character manager for Project #
+- Project # (2026): An original tabletop game for 2–6 players, currently in development. Details remain under wraps.
+- Project # Simulator (2026): A simulation engine for automated gameplay testing, rule validation, and balance analysis of an unreleased board game.
+- Project # Board Generator (2026): A procedural board generator for creating, configuring, and experimenting with tabletop game layouts.
+- Project # Character Manager (2026): A character management tool for designing, organizing, and balancing playable characters in an original board game.
+- L1XØ! (2026): A playful tabletop game about garbage collection. Drive miniature trucks, collect trash, and deliver it to the depot. Designed for 1–2 players, ages 3+, with quick 10-minute sessions.
 
 ## Projects
 
-- Fiorin Games Studio (2026): Independent board game studio creating original tabletop games through experimental mechanics, rapid prototyping, and hands-on production. — https://fior.in/games
+- Codebase Archaeologist (2026): A local-first desktop tool that maps software architecture, detects dependency cycles and complexity hotspots, and analyzes change impact using static analysis and Git history. — https://github.com/fiorin/codebase-archeologist
 - arcRevil (2026): AI-powered architectural PR reviewer that detects design violations, dependency issues, and architectural regressions using static analysis and LLMs. — https://github.com/fiorin/arcRevil
+- Fiorin Games Studio (2026): Independent tabletop game studio developing original games through mechanical design, simulation, rapid prototyping, and custom physical components. — https://fior.in/games
 - Restyle (2026): Image style converter using Google Gemini API and vision models for custom art generation. — https://github.com/fiorin/restyle
 - OurStl (2026): A STL extractor and mesh downloader for web-based 3D generation tools. — https://github.com/fiorin/ourstl
 - Abominapp (2025): Abomination randomizer app for Zombicide tabletop sessions. — https://abominapp.vercel.app/
@@ -43,7 +45,7 @@ Fiorin works across TypeScript and JavaScript platforms, microfrontends, distrib
 - VCMI (2018): Open-source C++ contribution enabling unique custom hero sprites in battle for the Heroes of Might and Magic III engine rewrite. — https://github.com/fiorin/vcmi
 - Coding Lab (2018): Open educational materials, including curricula, exercises, and course resources, developed for undergraduate Algorithms and Database courses at UTFPR. — https://drive.google.com/drive/folders/12jfbklSXpU0ER53bB6LRWWCUbJnYQIdU?usp=sharing
 - p0rte1ra (2017): Desktop livestock management system built with cross-platform web tech. — https://github.com/fiorin/p0rte1ra
-- Don't Starve (2016): A custom playable character for Don't Starve Together, created as an exploration of character design, gameplay mechanics, scripting, and mod development. — https://steamcommunity.com/id/sarna/myworkshopfiles/?appid=322330
+- Don't Starve Together (2016): A custom playable character for Don't Starve Together, created as an exploration of character design, gameplay mechanics, scripting, and mod development. — https://steamcommunity.com/id/sarna/myworkshopfiles/?appid=322330
 - Brawl (2016): Experimental 2D fighting game built with Phaser, focused on exploring game loop architecture and the underlying systems of real-time gameplay. — https://github.com/fiorin/brawl
 - Pto.css (2015): Lightweight utility-first CSS framework built as a Bootstrap alternative. — https://github.com/fiorin/ptocss
 - Bomberman (2011): Bomberman-inspired 2D game built from scratch with vanilla JavaScript, featuring grid-based movement, bombs, explosions, collisions, and real-time gameplay. — https://github.com/fiorin/bomberman2010.js

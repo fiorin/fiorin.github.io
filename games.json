@@ -4,12 +4,11 @@
     "year": "2026",
     "color": "colorYellow",
     "title": "Project #",
-    "description": "A boardgame for 2-6 players. Still unrevealed",
+    "description": "An original tabletop game for 2–6 players, currently in development. Details remain under wraps.",
     "tags": [
-      "Boardgame",
-      "node.js",
-      "Rust",
-      "Python"
+      "Board Game",
+      "Game Design",
+      "Tabletop"
     ],
     "href": "#",
     "icon": "external",
@@ -19,10 +18,12 @@
     "cover": "cover-simulator.webp",
     "year": "2026",
     "color": "colorRed",
-    "title": "Project #",
-    "description": "A boardgame game simulator for Project #",
+    "title": "Project # Simulator",
+    "description": "A simulation engine for automated gameplay testing, rule validation, and balance analysis of an unreleased board game.",
     "tags": [
-      "Node.js"
+      "Node.js",
+      "Simulation",
+      "Game Design"
     ],
     "href": "#",
     "icon": "external",
@@ -32,10 +33,12 @@
     "cover": "cover-generator.webp",
     "year": "2026",
     "color": "colorCyan",
-    "title": "Project # board generator",
-    "description": "A boardgame field generator for Project #",
+    "title": "Project # Board Generator",
+    "description": "A procedural board generator for creating, configuring, and experimenting with tabletop game layouts.",
     "tags": [
-      "Rust"
+      "Rust",
+      "Procedural Generation",
+      "Game Tools"
     ],
     "href": "#",
     "icon": "external",
@@ -45,10 +48,28 @@
     "cover": "cover-manager.webp",
     "year": "2026",
     "color": "colorCyan",
-    "title": "Project # character manager",
-    "description": "A boardgame character manager for Project #",
+    "title": "Project # Character Manager",
+    "description": "A character management tool for designing, organizing, and balancing playable characters in an original board game.",
     "tags": [
-      "Typescript"
+      "TypeScript",
+      "Game Tools",
+      "Game Design"
+    ],
+    "href": "#",
+    "icon": "external",
+    "external": true
+  },
+  {
+    "cover": "cover-lixo.webp",
+    "year": "2026",
+    "color": "colorGreen",
+    "title": "L1XØ!",
+    "description": "A playful tabletop game about garbage collection. Drive miniature trucks, collect trash, and deliver it to the depot. Designed for 1–2 players, ages 3+, with quick 10-minute sessions.",
+    "tags": [
+      "Board Game",
+      "Game Design",
+      "Family",
+      "3+"
     ],
     "href": "#",
     "icon": "external",
