@@ -49,4 +49,4 @@ Fiorin works across TypeScript and JavaScript platforms, microfrontends, distrib
 - Bomberman (2011): Bomberman-inspired 2D game built from scratch with vanilla JavaScript, featuring grid-based movement, bombs, explosions, collisions, and real-time gameplay. — https://github.com/fiorin/bomberman2010.js
 - Quarto Universitário (2009): Custom WordPress theme architecture developed and deployed for university media platforms, with a focus on reusable components, content management, and scalable publishing workflows. — https://fior.in/img/quartouniversitario.webp
 
-_Last updated: 2026-10-18._
+_Last updated: 2026-10-19._
