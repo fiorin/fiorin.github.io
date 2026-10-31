@@ -1,0 +1,321 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Luciano Fiorin",
+    "label": "Senior Software Engineer",
+    "email": "luciano@fior.in",
+    "phone": "+55 44 98826-1122",
+    "url": "https://fior.in",
+    "summary": "Senior Software Engineer with 17+ years of hands-on experience building and evolving production software across startups, enterprise platforms and international teams. Specializes in the TypeScript ecosystem — React, Next.js, Node.js, cloud infrastructure, distributed systems, microfrontends and developer tooling — and combines platform engineering with AI, focused on agent orchestration, workflow systems, LLM-powered content processing and AI-assisted development. Leads engineering squads, mentors developers and contributes to architecture while staying hands-on with implementation and performance. MSc in Computer Science with research in AI and pattern recognition.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Maringá",
+      "region": "Paraná",
+      "countryCode": "BR"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "fiorin",
+        "url": "https://github.com/fiorin"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "fiorin",
+        "url": "https://www.linkedin.com/in/fiorin"
+      },
+      {
+        "network": "Twitter",
+        "username": "fiorpontoin",
+        "url": "https://twitter.com/fiorpontoin"
+      },
+      {
+        "network": "Lattes",
+        "username": "",
+        "url": "http://lattes.cnpq.br/7583684423712640"
+      },
+      {
+        "network": "ArtStation",
+        "username": "fiorin",
+        "url": "https://www.artstation.com/fiorin"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Zephyr Cloud",
+      "position": "Senior Software Engineer",
+      "startDate": "2025-01",
+      "summary": "- Redesigned dependency graph calculation, indexing, caching and rendering strategies for large federated application graphs, improving responsiveness for an environment with roughly 400 microfrontends.\n- Optimized and extended Webpack and Rspack integrations, improving SSG and SSR support within the deployment and Module Federation ecosystem and reducing file upload and build times.\n- Contributed to platform-level architecture decisions: microfrontend orchestration, dependency management, deployment, versioning, developer tooling and performance.\n- Implemented multi-cloud deployment systems for replicated deployments across cloud providers, plus criteria/tag-based deployment to automate environment-specific processes.\n- Built a platform-wide supervisory agent with shared context that monitors activity across specialized agents, and created context-document-driven agents for collaborative, goal-oriented workflows.\n- Implemented automation for actions and events through a drag-and-drop workflow system with 100+ actions, events and integrations in the AI Platform, while optimizing chat response time.",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Module Federation",
+        "Microfrontends",
+        "Webpack",
+        "Rspack",
+        "AI",
+        "LLM",
+        "Agent orchestration"
+      ]
+    },
+    {
+      "name": "JoVE",
+      "position": "Senior Software Engineer / Team Lead",
+      "startDate": "2023-02",
+      "endDate": "2025-01",
+      "summary": "- Extended the indexed search architecture with Elasticsearch fuzzy matching and pagination while maintaining performance characteristics of a large scientific and academic system.\n- Designed and implemented an AI-assisted content processing pipeline that prepared and filtered article and video data for external AI model analysis, storing enriched results to improve search.\n- Migrated the frontend to React and Next.js, added Node.js backend services for internal monitoring tools, and refactored multiple modules to reduce code footprint and modularize migrated code.\n- Led a squad of ~5 senior engineers for one year, coordinating delivery, architecture, code reviews and resolving technical disagreements.\n- Shipped an evaluation and questionnaire system used by professors worldwide, and drove test-coverage initiatives across platform modules using external AI models.",
+      "keywords": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "Symfony",
+        "PostgreSQL",
+        "Elasticsearch",
+        "GraphQL",
+        "AWS",
+        "AI",
+        "Team leadership"
+      ]
+    },
+    {
+      "name": "Right Balance",
+      "position": "Technical Supervisor",
+      "startDate": "2023-02",
+      "endDate": "2025-01",
+      "summary": "- Supervised ~7 engineers across international client allocations, providing technical guidance and maintaining consistent delivery quality.\n- Ran regular 1:1s covering feedback, mentoring and professional development.\n- Prepared monthly reports for consultancy leadership and the CEO on engineer performance, project progress and client allocation.\n- Intercepted and resolved internal client problems autonomously, exercising conflict resolution without escalation.",
+      "keywords": [
+        "Engineering supervision",
+        "Team management",
+        "Mentoring",
+        "Technical leadership"
+      ]
+    },
+    {
+      "name": "Groundbreaker",
+      "position": "Senior Software Engineer",
+      "startDate": "2021-09",
+      "endDate": "2023-02",
+      "summary": "- Contributed to architectural modernization from a monolith toward independently deployable microservices, microfrontends, serverless services and event-driven workflows for a real estate system transacting millions of dollars annually.\n- Implemented Module Federation across dozens of independently deployed applications so repositories and components could evolve and deploy separately.\n- Contributed to AWS serverless infrastructure using Lambda, DynamoDB, SQS, Cognito and Terraform.\n- Migrated the backend from Ruby to Node.js and a serverless architecture, and the frontend to React and Next.js with microfrontends.\n- Implemented payment and subscription management across backend services, data synchronization, CI/CD, deployment automation and production architecture.",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "DynamoDB",
+        "Serverless",
+        "Module Federation",
+        "AWS Lambda",
+        "SQS",
+        "Cognito",
+        "Terraform"
+      ]
+    },
+    {
+      "name": "VivaWorks",
+      "position": "Senior Software Engineer Team Lead",
+      "startDate": "2019-01",
+      "endDate": "2021-09",
+      "summary": "- Led and delivered multiple products and major platform initiatives from concept to production: real-time chat, mobile applications, conference-room systems, TV applications and reusable platform modules for a B2B social network system.\n- Delivered an MVP real-time communication product from concept through production, and built conference-room and TV applications from scratch.\n- Developed mobile applications in ~4 months with Flutter alongside the existing web platform and backend services.\n- Designed real-time, event-driven communication features with Node.js and React, helping stabilize the broader platform architecture.\n- Contributed to main-product stability as it grew from first client company to 300+ paying companies plus free/entry plans, and integrated external educational, payment, video and monitoring systems.",
+      "keywords": [
+        "Node.js",
+        "React",
+        "TypeScript",
+        "Flutter",
+        "PostgreSQL",
+        "Zend",
+        "Laminas",
+        "AWS"
+      ]
+    },
+    {
+      "name": "Multibot",
+      "position": "Senior Software Engineer",
+      "startDate": "2019-03",
+      "endDate": "2021-08",
+      "summary": "- Owned core technical direction as principal developer from initial architecture through production for an investment recommendation product originated as an MVP within VivaWorks.\n- Architected a Node.js and AWS serverless backend and React platform for a recurring-revenue product; delivered the first MVP in ~3 months and grew it to 300+ customers.\n- Built the SaaS platform from concept to production, helping establish a profitable business operated for roughly four years.\n- Participated in product and board-level strategy, shaping the roadmap and implementing stock exchange, financial and payment integrations.",
+      "keywords": [
+        "JavaScript",
+        "Node.js",
+        "React",
+        "PostgreSQL",
+        "AWS",
+        "Serverless",
+        "SaaS"
+      ]
+    },
+    {
+      "name": "UTFPR",
+      "position": "Programming Languages Professor",
+      "startDate": "2017-03",
+      "endDate": "2018-12",
+      "summary": "- Taught programming languages and database systems, including Java, Python, JavaScript, PHP, C++, MySQL and MongoDB.\n- Mentored students for programming competitions, strengthening problem-solving and coding skills.\n- Evaluated graduation projects with emphasis on architecture and code quality, giving constructive feedback.",
+      "keywords": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "PHP",
+        "C++",
+        "MySQL",
+        "MongoDB",
+        "Teaching"
+      ]
+    },
+    {
+      "name": "VivaWorks",
+      "position": "Senior Software Engineer",
+      "startDate": "2015-02",
+      "endDate": "2017-02",
+      "summary": "- Developed collaborative web applications and real-time communication features using PHP/Zend, Node.js, React, JavaScript and PostgreSQL.\n- Contributed to modernization of legacy systems by introducing Node.js and React alongside the existing PHP platform.\n- Built and integrated backend and frontend features across collaborative communication and business workflows.",
+      "keywords": [
+        "PHP",
+        "Zend",
+        "Node.js",
+        "React",
+        "JavaScript",
+        "PostgreSQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "State University of Maringá (UEM)",
+      "url": "http://www.uem.br/",
+      "area": "Computer Science",
+      "studyType": "Master's Degree",
+      "startDate": "2013",
+      "endDate": "2016",
+      "summary": "Research focused on dynamic ensemble selection and classifier optimization for music genre recognition."
+    },
+    {
+      "institution": "State University of Maringá (UEM)",
+      "url": "http://www.uem.br/",
+      "area": "Computer Science",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2007",
+      "endDate": "2011",
+      "summary": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "level": "Advanced",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "PHP",
+        "Java",
+        "C++"
+      ]
+    },
+    {
+      "name": "Front-end",
+      "level": "Advanced",
+      "keywords": [
+        "React",
+        "Next.js",
+        "Module Federation",
+        "Microfrontends",
+        "Webpack",
+        "Rspack",
+        "SSG",
+        "SSR"
+      ]
+    },
+    {
+      "name": "Backend & infrastructure",
+      "level": "Advanced",
+      "keywords": [
+        "Node.js",
+        "PostgreSQL",
+        "DynamoDB",
+        "Serverless",
+        "Microservices",
+        "Distributed systems",
+        "Event-driven architecture",
+        "GraphQL",
+        "Elasticsearch"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "level": "Advanced",
+      "keywords": [
+        "AWS",
+        "Lambda",
+        "SQS",
+        "Cognito",
+        "Terraform",
+        "CI/CD",
+        "Multi-cloud deployment"
+      ]
+    },
+    {
+      "name": "AI & LLM applications",
+      "level": "Advanced",
+      "keywords": [
+        "Agent orchestration",
+        "Agent workflows",
+        "LLM applications",
+        "AI-assisted content processing",
+        "Evaluation pipelines",
+        "AI-assisted development"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "level": "Advanced",
+      "keywords": [
+        "Technical leadership",
+        "Squad lead",
+        "Engineering supervision",
+        "Mentoring",
+        "Code review",
+        "Architecture decisions"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "Advanced",
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "DynamoDB"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [
+    {
+      "name": "3D modeling",
+      "keywords": [
+        "Blender",
+        "ArtStation"
+      ]
+    },
+    {
+      "name": "Game development",
+      "keywords": [
+        "Phaser",
+        "Electron",
+        "Lua"
+      ]
+    }
+  ]
+}
