@@ -1,5 +1,24 @@
 [
   {
+    "cover": "cover-3dare.webp",
+    "year": "2026",
+    "color": "colorRed",
+    "title": "3dare",
+    "description": "A local-first AI-powered 3D modeling tool that transforms 2D images into printable STL models. Built to run lightweight AI models locally, it makes 3D creation more accessible, challenging the limits of traditional modeling workflows and putting creative freedom in the hands of makers.",
+    "tags": [
+      "Python",
+      "FastAPI",
+      "AI",
+      "3D Modeling",
+      "STL",
+      "Local AI",
+      "Desktop Tools"
+    ],
+    "href": "https://github.com/fiorin/3dare",
+    "icon": "external",
+    "external": true
+  },
+  {
     "cover": "cover-archeologist.webp",
     "year": "2026",
     "color": "colorBlue",

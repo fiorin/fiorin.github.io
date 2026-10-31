@@ -35,6 +35,7 @@ Fiorin works across TypeScript and JavaScript platforms, microfrontends, distrib
 
 ## Projects
 
+- 3dare (2026): A local-first AI-powered 3D modeling tool that transforms 2D images into printable STL models. Built to run lightweight AI models locally, it makes 3D creation more accessible, challenging the limits of traditional modeling workflows and putting creative freedom in the hands of makers. — https://github.com/fiorin/3dare
 - Codebase Archaeologist (2026): A local-first desktop tool that maps software architecture, detects dependency cycles and complexity hotspots, and analyzes change impact using static analysis and Git history. — https://github.com/fiorin/codebase-archeologist
 - arcRevil (2026): AI-powered architectural PR reviewer that detects design violations, dependency issues, and architectural regressions using static analysis and LLMs. — https://github.com/fiorin/arcRevil
 - Fiorin Games Studio (2026): Independent tabletop game studio developing original games through mechanical design, simulation, rapid prototyping, and custom physical components. — https://fior.in/games
@@ -51,4 +52,4 @@ Fiorin works across TypeScript and JavaScript platforms, microfrontends, distrib
 - Bomberman (2011): Bomberman-inspired 2D game built from scratch with vanilla JavaScript, featuring grid-based movement, bombs, explosions, collisions, and real-time gameplay. — https://github.com/fiorin/bomberman2010.js
 - Quarto Universitário (2009): Custom WordPress theme architecture developed and deployed for university media platforms, with a focus on reusable components, content management, and scalable publishing workflows. — https://fior.in/img/quartouniversitario.webp
 
-_Last updated: 2026-10-19._
+_Last updated: 2026-10-31._
