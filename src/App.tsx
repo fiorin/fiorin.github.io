@@ -40,7 +40,7 @@ function Ability({ item }: { item: AbilityItem }) {
 }
 
 function App() {
-  return <><Seo {...routeMeta["/"]} /><div id="page" className="position-relative margin-auto"><nav id="menu" aria-label="Main navigation"><p className="menuTitle">Menu</p><ul id="menuList"><li className="menuItem"><a href="#who">Who am I ?</a></li><li className="menuItem"><a href="#contact">Contact</a></li><li className="menuItem"><a href="#abilities">Abilities</a></li><li className="menuItem"><a href="#projects">Projects</a></li></ul></nav>
+  return <><Seo {...routeMeta["/"]} /><div id="page" className="position-relative margin-auto"><nav id="menu" aria-label="Main navigation"><p className="menuTitle">Menu</p><ul id="menuList"><li className="menuItem"><a href="#who">Who am I ?</a></li><li className="menuItem"><a href="#contact">Contact</a></li><li className="menuItem"><a href="#abilities">Abilities</a></li><li className="menuItem"><a href="#projects">Projects</a></li><li className="menuItem"><a href="/games">Studio</a></li></ul></nav>
     <div className="all"><header id="logo"><h1 className="logo" title="It's me!"><a href="https://www.fior.in"><img src="/img/fiorin.png" alt="fior.in" width="62" height="64" /></a></h1></header><div className="bgHeaderBottom clearfix">
       <section id="who"><section id="welcome" className="text-center"><div id="welcomeFirstLine"><span id="welcomeHi">Hi</span><span id="welcomeIm">, i'm</span><span id="welcomeFiorin"> Fiorin</span></div><div className="welcomeSecondLine"><span id="welcomeIcan">I can code!</span> <span id="welcomeMuchMore">& much more</span></div></section>
         <section id="characterSlider" className="margin-auto" aria-label="Fiorin can code">
@@ -51,7 +51,7 @@ function App() {
               </div>
               </section>
       </section>
-      <section id="contact"><h2 className="sectionTitle text-center">Where do I find your contacts and social stuff?</h2><div className="contactLinks text-center"><ul id="contactList"><li className="contactItem"><a href="https://www.linkedin.com/in/fiorin" target="_blank" rel="noreferrer">Linkedin</a></li><li className="contactItem"><a href="https://github.com/fiorin" target="_blank" rel="noreferrer">Github</a></li><li className="contactItem"><a href="http://lattes.cnpq.br/7583684423712640" target="_blank" rel="noreferrer">Lattes</a></li></ul></div></section>
+      <section id="contact"><h2 className="sectionTitle text-center">Where do I find your contacts and social stuff?</h2><div className="contactLinks text-center"><ul id="contactList"><li className="contactItem"><a href="https://www.linkedin.com/in/fiorin" target="_blank" rel="noreferrer">Linkedin</a></li><li className="contactItem"><a href="https://github.com/fiorin" target="_blank" rel="noreferrer">Github</a></li><li className="contactItem"><a href="http://lattes.cnpq.br/7583684423712640" target="_blank" rel="noreferrer">Lattes</a></li><li className="contactItem"><a href="https://www.instagram.com/fioringames" target="_blank" rel="noreferrer">Instagram</a></li></ul></div></section>
       <div className="divider" /><section id="abilities"><h2 className="sectionTitle text-center">Tell me more about your skills, abilities and superpowers...</h2></section>
     </div><section>{abilities.map((item) => <Ability item={item} key={item.id} />)}</section>
       <section id="projects" className="mt-5"><h2 className="sectionTitle text-center">What about side projects?</h2><ProjectList /></section>

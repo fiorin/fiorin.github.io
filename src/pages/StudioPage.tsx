@@ -24,7 +24,7 @@ function About({ item }: { item: AboutItem }) {
 }
 
 function StudioPage() {
-  return <><Seo {...routeMeta["/games"]} /><div id="page" className="studioTheme position-relative margin-auto"><nav id="menu" aria-label="Main navigation"><p className="menuTitle">Menu</p><ul id="menuList"><li className="menuItem"><a href="#studio">The studio</a></li><li className="menuItem"><a href="#games">Games</a></li><li className="menuItem"><a href="#contact">Contact</a></li></ul></nav>
+  return <><Seo {...routeMeta["/games"]} /><div id="page" className="studioTheme position-relative margin-auto"><nav id="menu" aria-label="Main navigation"><p className="menuTitle">Menu</p><ul id="menuList"><li className="menuItem"><a href="#studio">The studio</a></li><li className="menuItem"><a href="#contact">Contact</a></li><li className="menuItem"><a href="#games">Games</a></li><li className="menuItem"><a href="/">↵ Portfolio</a></li></ul></nav>
     <div className="all"><header id="logo"><h1 className="logo" title="Fiorin Games Studio"><a href="/"><img src="/img/studio.webp" alt="Fiorin Games Studio" width="62" height="64" /></a></h1></header><div className="bgHeaderBottom clearfix">
       <section id="who"><section id="welcome" className="text-center"><div id="welcomeFirstLine"><span id="welcomeFiorin">Fiorin</span> <span id="welcomeHi">Games</span>  </div><div className="welcomeSecondLine"><span id="welcomeIcan">Hello my friend,</span> <span id="welcomeMuchMore"> stay a while and listen</span></div></section>
         <section id="characterSlider" className="margin-auto" aria-label="Fiorin Games Studio">
