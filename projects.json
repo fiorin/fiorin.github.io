@@ -4,7 +4,7 @@
     "year": "2026",
     "color": "colorRed",
     "title": "3dare",
-    "description": "A local-first AI-powered 3D modeling tool that transforms 2D images into printable STL models. Built to run lightweight AI models locally, it makes 3D creation more accessible, challenging the limits of traditional modeling workflows and putting creative freedom in the hands of makers.",
+    "description": "A local-first AI-powered 3D modeling tool that transforms 2D images into printable STL models.",
     "tags": [
       "Python",
       "FastAPI",
@@ -15,23 +15,6 @@
       "Desktop Tools"
     ],
     "href": "https://github.com/fiorin/3dare",
-    "icon": "external",
-    "external": true
-  },
-  {
-    "cover": "cover-archeologist.webp",
-    "year": "2026",
-    "color": "colorBlue",
-    "title": "Codebase Archaeologist",
-    "description": "A local-first desktop tool that maps software architecture, detects dependency cycles and complexity hotspots, and analyzes change impact using static analysis and Git history.",
-    "tags": [
-      "Rust",
-      "TypeScript",
-      "Tauri",
-      "Static Analysis",
-      "Developer Tools"
-    ],
-    "href": "https://github.com/fiorin/codebase-archeologist",
     "icon": "external",
     "external": true
   },

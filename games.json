@@ -10,9 +10,8 @@
       "Game Design",
       "Tabletop"
     ],
-    "href": "#",
-    "icon": "external",
-    "external": true
+    "href": "/games/project-hash",
+    "icon": "link"
   },
   {
     "cover": "cover-simulator.webp",
@@ -30,34 +29,19 @@
     "external": true
   },
   {
-    "cover": "cover-generator.webp",
+    "cover": "cover-reino.webp",
     "year": "2026",
-    "color": "colorCyan",
-    "title": "Project # Board Generator",
-    "description": "A procedural board generator for creating, configuring, and experimenting with tabletop game layouts.",
+    "color": "colorRed",
+    "title": "O Reino de Dentro",
+    "description": "An original illustrated children's book that explores the human body's immune system through an imaginative kingdom inhabited by blood cells. Featuring original storytelling, character design, and watercolor-inspired art direction.",
     "tags": [
-      "Rust",
-      "Procedural Generation",
-      "Game Tools"
+      "Children's Book",
+      "Storytelling",
+      "Character Design",
+      "Art Direction"
     ],
-    "href": "#",
-    "icon": "external",
-    "external": true
-  },
-  {
-    "cover": "cover-manager.webp",
-    "year": "2026",
-    "color": "colorCyan",
-    "title": "Project # Character Manager",
-    "description": "A character management tool for designing, organizing, and balancing playable characters in an original board game.",
-    "tags": [
-      "TypeScript",
-      "Game Tools",
-      "Game Design"
-    ],
-    "href": "#",
-    "icon": "external",
-    "external": true
+    "href": "/games/o-reino-de-dentro",
+    "icon": "link"
   },
   {
     "cover": "cover-lixo.webp",
@@ -71,8 +55,7 @@
       "Family",
       "3+"
     ],
-    "href": "#",
-    "icon": "external",
-    "external": true
+    "href": "/games/lixo",
+    "icon": "link"
   }
 ]

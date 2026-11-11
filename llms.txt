@@ -27,16 +27,14 @@ Fiorin works across TypeScript and JavaScript platforms, microfrontends, distrib
 
 ## Fiorin Games Studio
 
-- Project # (2026): An original tabletop game for 2–6 players, currently in development. Details remain under wraps.
+- Project # (2026): An original tabletop game for 2–6 players, currently in development. Details remain under wraps. — https://fior.in/games/project-hash
 - Project # Simulator (2026): A simulation engine for automated gameplay testing, rule validation, and balance analysis of an unreleased board game.
-- Project # Board Generator (2026): A procedural board generator for creating, configuring, and experimenting with tabletop game layouts.
-- Project # Character Manager (2026): A character management tool for designing, organizing, and balancing playable characters in an original board game.
-- L1XØ! (2026): A playful tabletop game about garbage collection. Drive miniature trucks, collect trash, and deliver it to the depot. Designed for 1–2 players, ages 3+, with quick 10-minute sessions.
+- O Reino de Dentro (2026): An original illustrated children's book that explores the human body's immune system through an imaginative kingdom inhabited by blood cells. Featuring original storytelling, character design, and watercolor-inspired art direction. — https://fior.in/games/o-reino-de-dentro
+- L1XØ! (2026): A playful tabletop game about garbage collection. Drive miniature trucks, collect trash, and deliver it to the depot. Designed for 1–2 players, ages 3+, with quick 10-minute sessions. — https://fior.in/games/lixo
 
 ## Projects
 
-- 3dare (2026): A local-first AI-powered 3D modeling tool that transforms 2D images into printable STL models. Built to run lightweight AI models locally, it makes 3D creation more accessible, challenging the limits of traditional modeling workflows and putting creative freedom in the hands of makers. — https://github.com/fiorin/3dare
-- Codebase Archaeologist (2026): A local-first desktop tool that maps software architecture, detects dependency cycles and complexity hotspots, and analyzes change impact using static analysis and Git history. — https://github.com/fiorin/codebase-archeologist
+- 3dare (2026): A local-first AI-powered 3D modeling tool that transforms 2D images into printable STL models. — https://github.com/fiorin/3dare
 - arcRevil (2026): AI-powered architectural PR reviewer that detects design violations, dependency issues, and architectural regressions using static analysis and LLMs. — https://github.com/fiorin/arcRevil
 - Fiorin Games Studio (2026): Independent tabletop game studio developing original games through mechanical design, simulation, rapid prototyping, and custom physical components. — https://fior.in/games
 - Restyle (2026): Image style converter using Google Gemini API and vision models for custom art generation. — https://github.com/fiorin/restyle
@@ -52,4 +50,4 @@ Fiorin works across TypeScript and JavaScript platforms, microfrontends, distrib
 - Bomberman (2011): Bomberman-inspired 2D game built from scratch with vanilla JavaScript, featuring grid-based movement, bombs, explosions, collisions, and real-time gameplay. — https://github.com/fiorin/bomberman2010.js
 - Quarto Universitário (2009): Custom WordPress theme architecture developed and deployed for university media platforms, with a focus on reusable components, content management, and scalable publishing workflows. — https://fior.in/img/quartouniversitario.webp
 
-_Last updated: 2026-10-31._
+_Last updated: 2026-11-11._
